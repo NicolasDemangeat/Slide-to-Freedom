@@ -285,6 +285,46 @@
         "userAdded": false
       },
       {
+        "file": "tile_0062.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0062.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile_0063.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0063.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Springboard.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Springboard",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Springboard2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Springboard2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/avalanche.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "avalanche",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
         "file": "assets/NewSprite4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -369,6 +409,10 @@
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/sticker"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
     }
   ],
@@ -376,6 +420,14 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalLayouts/layout1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/layout2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/layout3"
     }
   ],
   "externalSourceFiles": []
