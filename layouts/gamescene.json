@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6244537826600002,
+    "zoomFactor": 0.8416428125373118,
     "windowMask": false
   },
   "objectsGroups": [
@@ -94,6 +94,103 @@
         }
       ],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Springboard",
+      "persistentUuid": "5be6502f-5200-4cc6-b599-6e4aae0dd58f",
+      "width": 0,
+      "x": 352,
+      "y": 96,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Springboard",
+      "persistentUuid": "8c52c50f-d53e-4c9a-86c1-cdf48ec83b27",
+      "width": 0,
+      "x": 224,
+      "y": 112,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Springboard",
+      "persistentUuid": "4f984e53-dcec-4690-b2ab-9f7af61c1c4c",
+      "width": 0,
+      "x": 288,
+      "y": 192,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Springboard",
+      "persistentUuid": "5c217caf-c336-48e5-9d74-2c339303e555",
+      "width": 0,
+      "x": 400,
+      "y": 240,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
+      "keepRatio": true,
+      "layer": "",
+      "name": "avalanche",
+      "persistentUuid": "890d2cff-73fe-42a5-9581-2973574b257b",
+      "width": 720,
+      "x": 0,
+      "y": 0,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 91,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Snow",
+      "persistentUuid": "33556b41-1f74-4459-9176-bab82049567e",
+      "width": 0,
+      "x": 336,
+      "y": -80,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -117,7 +214,7 @@
         "rowCount": 11,
         "columnCount": 12,
         "tileSize": 16,
-        "tilesWithHitBox": "18,6,19,7,8,9,20,21,22,23,11,10,34,35,33,32,31,30,69,81,80,79,78,47,1,4,12,24,37,50,51,40,29,17,15,28,14,25,62,63"
+        "tilesWithHitBox": "19,7,8,9,20,21,22,23,11,10,34,35,33,32,31,30,69,81,80,79,78,47,1,4,12,24,37,50,51,40,29,17,15,28,14,25"
       }
     },
     {
@@ -130,11 +227,11 @@
       "effects": [],
       "behaviors": [
         {
+          "acceleration": 600,
           "isFolded": true,
+          "maxSpeed": 200,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 4000,
-          "maxSpeed": 200,
           "rotateObject": false,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -144,6 +241,10 @@
           "ignoreDefaultControls": false,
           "movementAngleOffset": 0,
           "viewpoint": "TopDown"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -293,6 +394,250 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Springboard",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Springboard",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Springboard2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "avalanche",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": true,
+          "IsDestroyedWithParent": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "avalanche",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "avalanche",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "obstacle",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "additive": false,
+      "assetStoreId": "a601135e35f22fd34f5ea8ef1d784e1a1e371f48b5bc2ea228ced5f9b05388e4",
+      "destroyWhenNoParticles": false,
+      "emitterAngleA": 0,
+      "emitterAngleB": 0,
+      "emitterForceMax": 300,
+      "emitterForceMin": 100,
+      "flow": 200,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 10000,
+      "name": "Snow",
+      "particleAlpha1": 186,
+      "particleAlpha2": 117,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 255,
+      "particleBlue2": 255,
+      "particleColor1": "255;255;255",
+      "particleColor2": "255;255;255",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 255,
+      "particleGreen2": 255,
+      "particleLifeTimeMax": 4,
+      "particleLifeTimeMin": 4,
+      "particleRed1": 255,
+      "particleRed2": 255,
+      "particleSize1": 5,
+      "particleSize2": 7,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 1,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "tank": -1,
+      "textureParticleName": "Snow.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 200,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": true,
+          "IsDestroyedWithParent": false
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -302,46 +647,26 @@
         "objectName": "TileMapPacked"
       },
       {
+        "objectName": "obstacle"
+      },
+      {
         "objectName": "Player"
       },
       {
         "objectName": "BottomChecker"
+      },
+      {
+        "objectName": "Springboard"
+      },
+      {
+        "objectName": "avalanche"
+      },
+      {
+        "objectName": "Snow"
       }
     ]
   },
   "events": [
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "CentreCamera"
-          },
-          "parameters": [
-            "",
-            "Player",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ClampCamera"
-          },
-          "parameters": [
-            "",
-            "0",
-            "0",
-            "715",
-            "640",
-            "",
-            ""
-          ]
-        }
-      ]
-    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -352,7 +677,7 @@
           "parameters": [
             "Player",
             ">",
-            "BottomChecker.Y() - 200"
+            "BottomChecker.Y() - 400"
           ]
         }
       ],
@@ -444,6 +769,44 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Random",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Layout3\"",
+                "BottomChecker.X()",
+                "BottomChecker.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BottomChecker",
+                ""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -457,7 +820,7 @@
           "parameters": [
             "AllObjects",
             "<",
-            "Player.Y() - 500"
+            "Player.Y() - 800"
           ]
         }
       ],
@@ -496,6 +859,17 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "AddForceXY"
+          },
+          "parameters": [
+            "Player",
+            "0",
+            "50",
+            "1"
+          ]
         }
       ]
     },
@@ -524,6 +898,188 @@
             "Player",
             "TileMapPacked",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Springboard"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "obstacle"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterX"
+          },
+          "parameters": [
+            "",
+            "=",
+            "lerp(CameraCenterX(), Player.X(), 0.05)",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterY"
+          },
+          "parameters": [
+            "",
+            "=",
+            "lerp(CameraCenterY(), Player.Y(), 0.05)",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Sticker::Sticker::Stick"
+          },
+          "parameters": [
+            "Snow",
+            "Sticker",
+            "Player",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "Springboard",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::Acceleration"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "900"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+          },
+          "parameters": [
+            "Player",
+            "Tween",
+            "\"Player\"",
+            "1.5",
+            "\"bounce\"",
+            "0.3",
+            "3",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+          },
+          "parameters": [
+            "Player",
+            "Tween",
+            "\"Player\"",
+            "1",
+            "\"bounce\"",
+            "0.5",
+            "3",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "Player",
+            "+",
+            "15"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "obstacle",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::Acceleration"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "50"
+          ]
+        },
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "100"
           ]
         }
       ]
@@ -605,8 +1161,16 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
+    },
+    {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }
