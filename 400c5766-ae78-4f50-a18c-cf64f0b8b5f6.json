@@ -127,6 +127,22 @@
           "identifier": "https://project-resources.gdevelop.io/400c5766-ae78-4f50-a18c-cf64f0b8b5f6/resources/2eb3fd1e2db426f7c8a0e0a1508a6a6e78750903e5945ec4a6460e3b6c819e67-tile_0083.png",
           "name": "cloud-project-resource"
         }
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -149,6 +165,11 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/layout1"
+    }
+  ],
   "externalSourceFiles": []
 }
