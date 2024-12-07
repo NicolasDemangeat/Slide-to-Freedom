@@ -18,20 +18,29 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.645510570331148,
+    "zoomFactor": 0.8993607583666634,
     "windowMask": false
   },
   "objectsGroups": [
     {
-      "name": "obstacles",
+      "name": "AllObjects",
       "objects": [
         {
-          "name": "tree"
+          "name": "TileMapPacked"
+        },
+        {
+          "name": "BottomChecker"
         }
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "Random",
+      "type": "number",
+      "value": 1
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -39,19 +48,14 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "TileMapPacked",
-      "persistentUuid": "d9672fa6-3b5c-4798-ae1f-d8a0ccee9250",
+      "name": "Player",
+      "persistentUuid": "a44bb3a4-4644-4719-a18f-ad065c86872d",
       "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 1,
+      "x": 320,
+      "y": 16,
+      "zOrder": 2,
       "numberProperties": [],
-      "stringProperties": [
-        {
-          "name": "tilemap",
-          "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":23,\"dimY\":14,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,0,0,0,0,0,0,1,2,3,2,4,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,24,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,37,0,0,0,28,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,50,0,0,0,17,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,61,62,63,62,64,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,18,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]}]}"
-        }
-      ],
+      "stringProperties": [],
       "initialVariables": []
     },
     {
@@ -60,11 +64,11 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "TileMapPacked",
-      "persistentUuid": "0eb039e0-367c-4950-bb55-2610f4611ee0",
+      "name": "BottomChecker",
+      "persistentUuid": "6bccded5-5c3d-4537-a439-60c76dc05127",
       "width": 0,
-      "x": 512,
-      "y": 80,
+      "x": 0,
+      "y": 304,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -76,62 +80,19 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "tree",
-      "persistentUuid": "5e70445d-5a01-4fd7-826d-7a03e01e7670",
+      "name": "TileMapPacked",
+      "persistentUuid": "9613209b-78ab-40cd-8e35-9b053d14437b",
       "width": 0,
-      "x": 288,
-      "y": 80,
-      "zOrder": 6,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
       "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "tree",
-      "persistentUuid": "8a07d491-9b4a-45a6-a54b-c2a292e288f5",
-      "width": 0,
-      "x": 304,
-      "y": 160,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "tree",
-      "persistentUuid": "a31946ad-ad23-47bb-9aa9-d687e3cd91b7",
-      "width": 0,
-      "x": 368,
-      "y": 64,
-      "zOrder": 8,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Player",
-      "persistentUuid": "ab1775f9-724f-49bd-86cb-e4097d795df8",
-      "width": 0,
-      "x": 288,
-      "y": 112,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
+      "stringProperties": [
+        {
+          "name": "tilemap",
+          "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":45,\"dimY\":19,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[5,5,5,5,5,5,5,5,5,5,5,1,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,1,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,1,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,1,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,1,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,1,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,1,26,27,27,27,27,27,27,27,27,27,62,63,27,27,27,27,27,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,1,26,27,62,63,39,26,26,26,26,26,26,26,26,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,1,39,39,39,39,39,39,39,26,26,26,26,26,26,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,24,39,39,39,39,39,39,39,26,26,26,26,26,26,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,5,37,39,39,39,39,39,26,26,26,26,26,26,26,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,5,5,37,39,39,39,39,26,26,26,26,26,26,26,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,5,5,5,37,39,39,39,62,63,26,26,26,26,26,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,50,38,38,38,38,38,38,38,38,38,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,38,38,38,38,38,38,38,38,38,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,38,38,38,38,38,38,38,38,38,62,63,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,38,38,38,38,38,38,38,38,39,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,38,38,38,38,38,38,38,38,38,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,38,38,38,38,38,38,38,38,39,39,39,39,39,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]]}]}"
+        }
+      ],
       "initialVariables": []
     }
   ],
@@ -142,13 +103,21 @@
       "type": "TileMap::SimpleTileMap",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ],
       "content": {
         "atlasImage": "tilemap_packed.png",
         "rowCount": 11,
         "columnCount": 12,
         "tileSize": 16,
-        "tilesWithHitBox": "18,19,8,9,20,21,22,23,11,10,34,35,33,32,31,30,69,81,80,79,78,47"
+        "tilesWithHitBox": "18,6,19,7,8,9,20,21,22,23,11,10,34,35,33,32,31,30,69,81,80,79,78,47,1,4,12,24,37,50,51,40,29,17,15,28,14,25,62,63"
       }
     },
     {
@@ -161,18 +130,19 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 1200,
+          "acceleration": 4000,
+          "maxSpeed": 200,
+          "rotateObject": false,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
-          "deceleration": 1200,
+          "deceleration": 800,
           "ignoreDefaultControls": false,
-          "maxSpeed": 250,
           "movementAngleOffset": 0,
-          "rotateObject": false,
           "viewpoint": "TopDown"
         }
       ],
@@ -266,7 +236,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "tree",
+      "name": "BottomChecker",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -274,16 +244,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "NewSprite",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "tile_0030.png",
+                  "image": "NewSprite3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -299,20 +270,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 2,
+                        "x": 0,
                         "y": 0
                       },
                       {
-                        "x": 14,
+                        "x": 8,
                         "y": 0
                       },
                       {
-                        "x": 14,
-                        "y": 16
+                        "x": 8,
+                        "y": 8
                       },
                       {
-                        "x": 2,
-                        "y": 16
+                        "x": 0,
+                        "y": 8
                       }
                     ]
                   ]
@@ -331,14 +302,139 @@
         "objectName": "TileMapPacked"
       },
       {
-        "objectName": "tree"
+        "objectName": "Player"
       },
       {
-        "objectName": "Player"
+        "objectName": "BottomChecker"
       }
     ]
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "CentreCamera"
+          },
+          "parameters": [
+            "",
+            "Player",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ClampCamera"
+          },
+          "parameters": [
+            "",
+            "0",
+            "0",
+            "715",
+            "640",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosY"
+          },
+          "parameters": [
+            "Player",
+            ">",
+            "BottomChecker.Y() - 200"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Random",
+            "=",
+            "RandomInRange(1,1)"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Random",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Layout1\"",
+                "BottomChecker.X()",
+                "BottomChecker.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BottomChecker",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PosY"
+          },
+          "parameters": [
+            "AllObjects",
+            "<",
+            "Player.Y() - 500"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "AllObjects",
+            ""
+          ]
+        }
+      ]
+    },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
@@ -354,13 +450,42 @@
       "actions": [
         {
           "type": {
-            "value": "TopDownMovementBehavior::Acceleration"
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "3",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
           },
           "parameters": [
             "Player",
-            "TopDownMovement",
-            "=",
-            "1250"
+            "TileMapPacked",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Player",
+            "TileMapPacked",
+            ""
           ]
         }
       ]
@@ -428,6 +553,10 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
     },
     {
       "name": "Resizable",

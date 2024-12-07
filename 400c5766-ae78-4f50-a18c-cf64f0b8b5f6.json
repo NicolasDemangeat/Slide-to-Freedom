@@ -193,7 +193,7 @@
         }
       },
       {
-        "file": "assets/NewSprite3.png",
+        "file": "assets/NewSprite.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite",
@@ -265,7 +265,22 @@
         "name": "candelabra.mp3",
         "preloadAsMusic": false,
         "preloadAsSound": false,
-        "preloadInCache": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
         "userAdded": false
       }
     ],
@@ -294,6 +309,11 @@
       "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
     }
   ],
-  "externalLayouts": [],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/layout1"
+    }
+  ],
   "externalSourceFiles": []
 }
