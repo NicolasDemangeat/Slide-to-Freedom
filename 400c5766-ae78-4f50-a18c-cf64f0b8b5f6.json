@@ -191,6 +191,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/29b9ec523484e55b183b3e008d942effecb6175042c5192136c78cc750120781_Snow.png",
           "name": "Snow.png"
         }
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

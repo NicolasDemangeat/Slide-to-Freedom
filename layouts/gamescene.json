@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.4307927813134267,
+    "zoomFactor": 0.645510570331148,
     "windowMask": false
   },
   "objectsGroups": [
@@ -161,6 +161,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 1200,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -170,9 +172,7 @@
           "ignoreDefaultControls": false,
           "maxSpeed": 250,
           "movementAngleOffset": 0,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TopDown"
         }
       ],
