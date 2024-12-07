@@ -21,9 +21,163 @@
     "zoomFactor": 0.7130377630690397,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "buttons",
+      "objects": [
+        {
+          "name": "StartMenuButton"
+        },
+        {
+          "name": "LeaderboardButton"
+        },
+        {
+          "name": "NewButton"
+        }
+      ]
+    }
+  ],
   "variables": [],
-  "instances": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 192,
+      "keepRatio": true,
+      "layer": "",
+      "name": "submissionText",
+      "persistentUuid": "82c8d92b-7a28-434f-9110-b0d0ad972c85",
+      "width": 640,
+      "x": 32,
+      "y": 224,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "winLooseText",
+      "persistentUuid": "c111b8ab-2d96-4b2f-9257-814c542f742e",
+      "width": 0,
+      "x": 288,
+      "y": 96,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NameInput",
+      "persistentUuid": "0d67a0a5-a72e-43d8-a4cb-80d14023f99c",
+      "width": 416,
+      "x": 96,
+      "y": 608,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "placeholder",
+          "value": "Name"
+        }
+      ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "",
+      "name": "StartMenuButton",
+      "persistentUuid": "baa4f345-6418-401b-8cc2-8856eb4ab087",
+      "width": 448,
+      "x": 128,
+      "y": 992,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewButton",
+      "persistentUuid": "9477c4c1-7597-4492-ad0b-300885588ffd",
+      "width": 0,
+      "x": 544,
+      "y": 608,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LeaderboardButton",
+      "persistentUuid": "b100cb59-0860-43c2-92b7-cb04af3aa51f",
+      "width": 448,
+      "x": 128,
+      "y": 800,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "ScoreText",
+      "persistentUuid": "56abe456-977f-4b6e-b1bc-ee494e5098e2",
+      "width": 0,
+      "x": 129,
+      "y": 512,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "ScoreInput",
+      "persistentUuid": "66a3cbdb-adcb-42ea-b4fc-e662470e7c65",
+      "width": 172,
+      "x": 320,
+      "y": 512,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
   "objects": [
     {
       "assetStoreId": "",
@@ -36,10 +190,52 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Text",
+      "string": "Type your name and click on the check button to submit your score !",
       "font": "",
       "textAlignment": "center",
-      "characterSize": 45,
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "122;221;82",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Type your name and click on the check button to submit your score !",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 50,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "winLooseText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 60,
       "color": {
         "b": 0,
         "g": 0,
@@ -50,7 +246,7 @@
         "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
-        "outlineColor": "122;221;82",
+        "outlineColor": "255;255;255",
         "outlineThickness": 2,
         "shadowAngle": 90,
         "shadowBlurRadius": 2,
@@ -61,10 +257,390 @@
         "underlined": false,
         "text": "Text",
         "font": "",
-        "textAlignment": "center",
+        "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 45,
+        "characterSize": 60,
         "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NameInput",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "",
+        "fontSize": 45,
+        "inputType": "text",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "52;82;240",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+      "name": "StartMenuButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Main Menu",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 79,
+            "g": 72,
+            "r": 72
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Main Menu",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "color": "72;72;79"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "additive": false,
+      "assetStoreId": "a601135e35f22fd34f5ea8ef1d784e1a1e371f48b5bc2ea228ced5f9b05388e4",
+      "destroyWhenNoParticles": false,
+      "emitterAngleA": 0,
+      "emitterAngleB": 0,
+      "emitterForceMax": 200,
+      "emitterForceMin": 100,
+      "flow": 90,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 1500,
+      "name": "Snow",
+      "particleAlpha1": 186,
+      "particleAlpha2": 100,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 255,
+      "particleBlue2": 255,
+      "particleColor1": "255;255;255",
+      "particleColor2": "255;255;255",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 255,
+      "particleGreen2": 255,
+      "particleLifeTimeMax": 8,
+      "particleLifeTimeMin": 6,
+      "particleRed1": 255,
+      "particleRed2": 255,
+      "particleSize1": 20,
+      "particleSize2": 15,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 1,
+      "rendererParam2": 1,
+      "rendererType": "Quad",
+      "tank": -1,
+      "textureParticleName": "Snow.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 720,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "NewButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 62,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "check_square_color_checkmark.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 64
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 64,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "check_square_grey_checkmark.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 64
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "",
+            "textAlignment": "",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 64,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "check_square_grey_checkmark.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 64
+        }
+      }
+    },
+    {
+      "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+      "name": "LeaderboardButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Leader Board",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 79,
+            "g": 72,
+            "r": 72
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Leader Board",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "color": "72;72;79"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "ScoreText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Score :",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 50,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Score :",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 50,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "ScoreInput",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "0",
+        "placeholder": "Touch to start typing",
+        "fontResourceName": "",
+        "fontSize": 50,
+        "inputType": "text",
+        "textColor": "0;0;0",
+        "fillColor": "255;255;255",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 0,
+        "readOnly": true,
+        "disabled": true
       }
     }
   ],
@@ -73,10 +649,449 @@
     "children": [
       {
         "objectName": "submissionText"
+      },
+      {
+        "objectName": "NameInput"
+      },
+      {
+        "objectName": "winLooseText"
+      },
+      {
+        "objectName": "StartMenuButton"
+      },
+      {
+        "objectName": "Snow"
+      },
+      {
+        "objectName": "NewButton"
+      },
+      {
+        "objectName": "LeaderboardButton"
+      },
+      {
+        "objectName": "ScoreText"
+      },
+      {
+        "objectName": "ScoreInput"
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Play Music"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "298035dbd6de9b4fc221a51f1723023e4387a92380f286b572903c486838460d_Piano Magic Motive.aac",
+                "1",
+                "yes",
+                "60",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "create snow particles"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Snow",
+                "360",
+                "-300",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Snow",
+                "90",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Snow",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Camera Management"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ClampCamera"
+              },
+              "parameters": [
+                "",
+                "0",
+                "0",
+                "720",
+                "ScreenHeight()",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Screen"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetWindowSize"
+              },
+              "parameters": [
+                "",
+                "720",
+                "ScreenHeight()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CenterWindow"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetWindowTitle"
+              },
+              "parameters": [
+                "",
+                "\"Slide to Freedom\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "set score input"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ScoreInput",
+                "Text",
+                "=",
+                "Score"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "buttons",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "sound hover buttons"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "buttons",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "f5d3ffae911b06f5a36cc912f77f25acdd0a6e0e2fad464b2a524ec3064881f2_Click_03.aac",
+                "2",
+                "",
+                "30",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "sound when button are clicked"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "NewButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "751052bbd3de6938713ebbe8782cc3f6feba91f9e3caf27272335ac4e549c0cd_Complete_02.aac",
+                "2",
+                "",
+                "50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Leaderboards::SavePlayerScore"
+              },
+              "parameters": [
+                "",
+                "\"0f1e3941-6590-40b8-83cf-bf7099b1a794\"",
+                "Score",
+                "NameInput.Text::Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Leaderboards::DisplayLeaderboard"
+              },
+              "parameters": [
+                "",
+                "\"0f1e3941-6590-40b8-83cf-bf7099b1a794\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "StartMenuButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"StartMenu\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "click1.ogg",
+                "2",
+                "",
+                "30",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "LeaderboardButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "click1.ogg",
+                "2",
+                "",
+                "30",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Leaderboards::DisplayLeaderboard"
+              },
+              "parameters": [
+                "",
+                "\"0f1e3941-6590-40b8-83cf-bf7099b1a794\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,
@@ -129,8 +1144,16 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",
