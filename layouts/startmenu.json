@@ -71,7 +71,7 @@
       "persistentUuid": "7fee6bc6-8ac3-4a76-a541-6adb61863427",
       "width": 416,
       "x": 160,
-      "y": 416,
+      "y": 343,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -88,7 +88,7 @@
       "persistentUuid": "23c81490-cdc7-4627-a9c7-f4c0da92f6de",
       "width": 416,
       "x": 160,
-      "y": 800,
+      "y": 672,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -105,7 +105,7 @@
       "persistentUuid": "1302e8c3-bac0-4626-860b-45609e13f2a9",
       "width": 416,
       "x": 160,
-      "y": 1088,
+      "y": 960,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -122,7 +122,7 @@
       "persistentUuid": "e6c71aa9-580e-4a56-ac8e-1279cc6e739f",
       "width": 416,
       "x": 160,
-      "y": 608,
+      "y": 502,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -137,8 +137,8 @@
       "name": "creditsText",
       "persistentUuid": "d51723db-e7ce-4fb0-9cd7-a77272cc2f99",
       "width": 0,
-      "x": 1239,
-      "y": 350,
+      "x": 1248,
+      "y": 256,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -155,7 +155,7 @@
       "persistentUuid": "ac3b0b91-6685-4bb6-843e-067b66a7253a",
       "width": 416,
       "x": 1312,
-      "y": 1056,
+      "y": 960,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -980,79 +980,212 @@
           ]
         }
       ],
-      "actions": [
+      "actions": [],
+      "events": [
         {
-          "type": {
-            "value": "Create"
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
           },
-          "parameters": [
-            "",
-            "Snow",
-            "360",
-            "-360",
-            ""
+          "comment": "Play Music"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "candelabra.mp3",
+                "1",
+                "yes",
+                "60",
+                "1"
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "Create"
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
           },
-          "parameters": [
-            "",
-            "Snow",
-            "1440",
-            "-360",
-            ""
+          "comment": "Hide Marker"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "CreditMarker"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "MenuMarker"
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "RotateTowardAngle"
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
           },
-          "parameters": [
-            "Snow",
-            "90",
-            "0",
-            ""
+          "comment": "create snow particles"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Snow",
+                "360",
+                "-360",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Snow",
+                "1440",
+                "-360",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Snow",
+                "90",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Snow",
+                "=",
+                "1"
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "ChangePlan"
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
           },
-          "parameters": [
-            "Snow",
-            "=",
-            "1"
+          "comment": "Camera Management"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ClampCamera"
+              },
+              "parameters": [
+                "",
+                "0",
+                "0",
+                "720",
+                "ScreenHeight()",
+                "",
+                ""
+              ]
+            }
           ]
         },
         {
-          "type": {
-            "value": "Cache"
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
           },
-          "parameters": [
-            "CreditMarker"
-          ]
+          "comment": "Screen"
         },
         {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "MenuMarker"
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySoundCanal"
-          },
-          "parameters": [
-            "",
-            "candelabra.mp3",
-            "1",
-            "yes",
-            "60",
-            "1"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetWindowSize"
+              },
+              "parameters": [
+                "",
+                "720",
+                "ScreenHeight()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CenterWindow"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetWindowTitle"
+              },
+              "parameters": [
+                "",
+                "\"Slide to Freedom\""
+              ]
+            }
           ]
         }
       ]
@@ -1062,271 +1195,283 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "button management",
+      "name": "Buttons Management",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "when buttons are clicked",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "CreditButton",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Tween::TweenCameraPosition2"
-                  },
-                  "parameters": [
-                    "",
-                    "\"cameraTween\"",
-                    "CreditMarker.CenterX()",
-                    "CameraCenterY()",
-                    "",
-                    "\"easeFrom\"",
-                    "0.4"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "BackButton",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Tween::TweenCameraPosition2"
-                  },
-                  "parameters": [
-                    "",
-                    "\"cameraTween\"",
-                    "MenuMarker.CenterX()",
-                    "CameraCenterY()",
-                    "",
-                    "\"easeFrom\"",
-                    "0.4"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "QuitGameButton",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Quit"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "LeaderboardButton",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Leaderboards::DisplayLeaderboard"
-                  },
-                  "parameters": [
-                    "",
-                    "\"BestScore\"",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "StartGameButton",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"GameScene\"",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "buttons",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlaySoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "click1.ogg",
-                    "1",
-                    "",
-                    "30",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Action for each buttons"
         },
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "hover buttons",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "buttons",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PlaySoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "f5d3ffae911b06f5a36cc912f77f25acdd0a6e0e2fad464b2a524ec3064881f2_Click_03.aac",
-                    "1",
-                    "",
-                    "30",
-                    ""
-                  ]
-                }
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "StartGameButton",
+                ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
-          "parameters": []
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"GameScene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "LeaderboardButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Leaderboards::DisplayLeaderboard"
+              },
+              "parameters": [
+                "",
+                "\"0f1e3941-6590-40b8-83cf-bf7099b1a794\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "CreditButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenCameraPosition2"
+              },
+              "parameters": [
+                "",
+                "\"cameraTween\"",
+                "CreditMarker.CenterX()",
+                "CameraCenterY()",
+                "",
+                "\"easeFrom\"",
+                "0.4"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BackButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenCameraPosition2"
+              },
+              "parameters": [
+                "",
+                "\"cameraTween\"",
+                "MenuMarker.CenterX()",
+                "CameraCenterY()",
+                "",
+                "\"easeFrom\"",
+                "0.4"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "QuitGameButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Play sounds for each buttons when hovered"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "buttons",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "f5d3ffae911b06f5a36cc912f77f25acdd0a6e0e2fad464b2a524ec3064881f2_Click_03.aac",
+                "2",
+                "",
+                "30",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Play sounds for each buttons when clicked"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "buttons",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "click1.ogg",
+                "2",
+                "",
+                "30",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
