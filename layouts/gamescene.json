@@ -9,19 +9,28 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 16,
+    "gridHeight": 16,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.8141881203709911,
+    "snap": true,
+    "zoomFactor": 1.4307927813134267,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "obstacles",
+      "objects": [
+        {
+          "name": "tree"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -29,20 +38,100 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "background",
+      "layer": "",
       "name": "TileMapPacked",
-      "persistentUuid": "7e9881eb-4bfc-4a30-8c3c-4073f17fcd92",
+      "persistentUuid": "d9672fa6-3b5c-4798-ae1f-d8a0ccee9250",
       "width": 0,
-      "x": 80,
-      "y": 16,
+      "x": 0,
+      "y": 0,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [
         {
           "name": "tilemap",
-          "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":25,\"dimY\":18,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[5,0,0,0,30,0,0,0,1,2,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,1,2,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,5,0,0,5,30,1,3,7,4,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,30,0,0,0,0,1,2,19,4,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,1,2,-1,4,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,5,0,0,0,1,-1,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,5,30,0,0,30,0,1,-1,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,5,0,0,1,20,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,1,3,8,4,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,5,0,0,5,0,1,2,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0],[-1,-1,-1,-1,-1,-1,-1,-1,24,38,3,15,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,37,38,30,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,50,3,27,17,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,3,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1]]}]}"
+          "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":23,\"dimY\":14,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,0,0,0,0,0,0,1,2,3,2,4,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,24,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,37,0,0,0,28,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,50,0,0,0,17,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,61,62,63,62,64,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,18,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]}]}"
         }
       ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TileMapPacked",
+      "persistentUuid": "0eb039e0-367c-4950-bb55-2610f4611ee0",
+      "width": 0,
+      "x": 512,
+      "y": 80,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "tree",
+      "persistentUuid": "5e70445d-5a01-4fd7-826d-7a03e01e7670",
+      "width": 0,
+      "x": 288,
+      "y": 80,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "tree",
+      "persistentUuid": "8a07d491-9b4a-45a6-a54b-c2a292e288f5",
+      "width": 0,
+      "x": 304,
+      "y": 160,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "tree",
+      "persistentUuid": "a31946ad-ad23-47bb-9aa9-d687e3cd91b7",
+      "width": 0,
+      "x": 368,
+      "y": 64,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Player",
+      "persistentUuid": "ab1775f9-724f-49bd-86cb-e4097d795df8",
+      "width": 0,
+      "x": 288,
+      "y": 112,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
       "initialVariables": []
     }
   ],
@@ -59,7 +148,7 @@
         "rowCount": 11,
         "columnCount": 12,
         "tileSize": 16,
-        "tilesWithHitBox": "18,6,19,7,8,9,20,21,22,23,11,10,34,35,33,32,31,30,69,81,80,79,78,47"
+        "tilesWithHitBox": "18,19,8,9,20,21,22,23,11,10,34,35,33,32,31,30,69,81,80,79,78,47"
       }
     },
     {
@@ -72,17 +161,17 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 400,
+          "acceleration": 1200,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
-          "deceleration": 800,
+          "deceleration": 1200,
           "ignoreDefaultControls": false,
-          "maxSpeed": 200,
+          "maxSpeed": 250,
           "movementAngleOffset": 0,
           "name": "TopDownMovement",
-          "rotateObject": true,
+          "rotateObject": false,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "TopDown"
         }
@@ -173,6 +262,66 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "tree",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile_0030.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 0
+                      },
+                      {
+                        "x": 14,
+                        "y": 0
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -182,45 +331,42 @@
         "objectName": "TileMapPacked"
       },
       {
+        "objectName": "tree"
+      },
+      {
         "objectName": "Player"
       }
     ]
   },
-  "events": [],
-  "layers": [
+  "events": [
     {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "cameraType": "",
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "background",
-      "renderingType": "",
-      "visibility": true,
-      "cameras": [],
-      "effects": [
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
+          "type": {
+            "value": "DepartScene"
           },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::Acceleration"
           },
-          "booleanParameters": {}
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "1250"
+          ]
         }
       ]
-    },
+    }
+  ],
+  "layers": [
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,

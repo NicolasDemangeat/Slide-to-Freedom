@@ -127,6 +127,70 @@
           "identifier": "https://project-resources.gdevelop.io/400c5766-ae78-4f50-a18c-cf64f0b8b5f6/resources/2eb3fd1e2db426f7c8a0e0a1508a6a6e78750903e5945ec4a6460e3b6c819e67-tile_0083.png",
           "name": "cloud-project-resource"
         }
+      },
+      {
+        "file": "tile_0030.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0030.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Container.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Container.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Grey Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/b43e0035dca80ea2fad5c5d65de926dae0185038e5f9cb21d5f20234f30d1c76_Grey Button_Hovered.png",
+          "name": "Grey Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/Grey Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/da7fc2efa0882eb5dfa0266315f2483c2f68d86a6751dc309ea9e9d0dd4759ba_Grey Button_Idle.png",
+          "name": "Grey Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/Grey Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/49c35e14af0e1f7aae407455cb944de96328955870e5f1500f63723ad879a42e_Grey Button_Pressed.png",
+          "name": "Grey Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/Snow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Snow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/29b9ec523484e55b183b3e008d942effecb6175042c5192136c78cc750120781_Snow.png",
+          "name": "Snow.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -148,7 +212,12 @@
     }
   ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    }
+  ],
   "externalLayouts": [],
   "externalSourceFiles": []
 }
