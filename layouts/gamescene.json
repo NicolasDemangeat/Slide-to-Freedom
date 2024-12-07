@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8993607583666634,
+    "zoomFactor": 0.6244537826600002,
     "windowMask": false
   },
   "objectsGroups": [
@@ -364,7 +364,7 @@
           "parameters": [
             "Random",
             "=",
-            "RandomInRange(1,1)"
+            "RandomInRange(1,2)"
           ]
         }
       ],
@@ -391,6 +391,44 @@
               "parameters": [
                 "",
                 "\"Layout1\"",
+                "BottomChecker.X()",
+                "BottomChecker.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BottomChecker",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Random",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"Layout2\"",
                 "BottomChecker.X()",
                 "BottomChecker.Y()",
                 ""

@@ -265,7 +265,8 @@
         "name": "candelabra.mp3",
         "preloadAsMusic": false,
         "preloadAsSound": false,
-        "preloadInCache": false
+        "preloadInCache": false,
+        "userAdded": false
       },
       {
         "file": "assets/NewSprite2.png",
@@ -313,6 +314,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalLayouts/layout1"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/layout2"
     }
   ],
   "externalSourceFiles": []
