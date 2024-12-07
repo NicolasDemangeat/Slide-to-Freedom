@@ -6,7 +6,7 @@
   "r": 129,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
-  "title": "",
+  "title": "Slide to Freedom",
   "v": 184,
   "uiSettings": {
     "grid": true,
@@ -21,7 +21,28 @@
     "zoomFactor": 0.4481978045410357,
     "windowMask": true
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "buttons",
+      "objects": [
+        {
+          "name": "StartGameButton"
+        },
+        {
+          "name": "LeaderboardButton"
+        },
+        {
+          "name": "CreditButton"
+        },
+        {
+          "name": "QuitGameButton"
+        },
+        {
+          "name": "BackButton"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -578,7 +599,7 @@
       "emitterAngleB": 0,
       "emitterForceMax": 200,
       "emitterForceMin": 100,
-      "flow": 80,
+      "flow": 90,
       "jumpForwardInTimeOnCreation": 0,
       "maxParticleNb": 1500,
       "name": "Snow",
@@ -997,6 +1018,16 @@
         },
         {
           "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Snow",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "Cache"
           },
           "parameters": [
@@ -1010,68 +1041,295 @@
           "parameters": [
             "MenuMarker"
           ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+        },
         {
           "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "BackButton",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Tween::TweenCameraPosition2"
+            "value": "PlaySoundCanal"
           },
           "parameters": [
             "",
-            "\"cameraTween\"",
-            "MenuMarker.CenterX()",
-            "CameraCenterY()",
-            "",
-            "\"linear\"",
+            "candelabra.mp3",
+            "1",
+            "yes",
+            "60",
             "1"
           ]
         }
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "button management",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "CreditButton",
-            ""
-          ]
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "when buttons are clicked",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "CreditButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenCameraPosition2"
+                  },
+                  "parameters": [
+                    "",
+                    "\"cameraTween\"",
+                    "CreditMarker.CenterX()",
+                    "CameraCenterY()",
+                    "",
+                    "\"easeFrom\"",
+                    "0.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "BackButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenCameraPosition2"
+                  },
+                  "parameters": [
+                    "",
+                    "\"cameraTween\"",
+                    "MenuMarker.CenterX()",
+                    "CameraCenterY()",
+                    "",
+                    "\"easeFrom\"",
+                    "0.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "QuitGameButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Quit"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "LeaderboardButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Leaderboards::DisplayLeaderboard"
+                  },
+                  "parameters": [
+                    "",
+                    "\"BestScore\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "StartGameButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"GameScene\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "buttons",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "click1.ogg",
+                    "1",
+                    "",
+                    "30",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "hover buttons",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "buttons",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "f5d3ffae911b06f5a36cc912f77f25acdd0a6e0e2fad464b2a524ec3064881f2_Click_03.aac",
+                    "1",
+                    "",
+                    "30",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Tween::TweenCameraPosition2"
-          },
-          "parameters": [
-            "",
-            "\"cameraTween\"",
-            "CreditMarker.CenterX()",
-            "CameraCenterY()",
-            "",
-            "\"linear\"",
-            "1"
-          ]
-        }
-      ]
+      "parameters": []
     }
   ],
   "layers": [

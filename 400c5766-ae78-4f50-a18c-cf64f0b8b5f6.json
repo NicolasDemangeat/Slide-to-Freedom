@@ -199,6 +199,74 @@
         "name": "NewSprite",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "click1.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "click1.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Click_03.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "f5d3ffae911b06f5a36cc912f77f25acdd0a6e0e2fad464b2a524ec3064881f2_Click_03.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Interface/Interface Bleeps/f5d3ffae911b06f5a36cc912f77f25acdd0a6e0e2fad464b2a524ec3064881f2_Click_03.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "click2.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "click2.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bleep_03.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "823b6a7f6747d704ae7d2bec3143c4ee702fe7344685400486594cbd3aeb71a2_Bleep_03.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Interface/Interface Bleeps/823b6a7f6747d704ae7d2bec3143c4ee702fe7344685400486594cbd3aeb71a2_Bleep_03.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "Lyric & Peaceful Space Theme #4.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Lyric & Peaceful Space Theme #4.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "candelabra.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "candelabra.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
