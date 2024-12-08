@@ -73,7 +73,7 @@
       "width": 0,
       "x": 320,
       "y": 112,
-      "zOrder": 4,
+      "zOrder": 4000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -283,7 +283,8 @@
       "y": 128,
       "zOrder": 553,
       "numberProperties": [],
-      "stringProperties": []
+      "stringProperties": [],
+      "initialVariables": []
     },
     {
       "angle": 0,
@@ -2143,12 +2144,12 @@
       "assetStoreId": "a601135e35f22fd34f5ea8ef1d784e1a1e371f48b5bc2ea228ced5f9b05388e4",
       "destroyWhenNoParticles": false,
       "emitterAngleA": 0,
-      "emitterAngleB": 45,
+      "emitterAngleB": 35,
       "emitterForceMax": 100,
-      "emitterForceMin": 20,
-      "flow": 700,
+      "emitterForceMin": 50,
+      "flow": 500,
       "jumpForwardInTimeOnCreation": 0,
-      "maxParticleNb": 1000,
+      "maxParticleNb": 1500,
       "name": "Avalanche",
       "particleAlpha1": 186,
       "particleAlpha2": 117,
@@ -2183,7 +2184,122 @@
       "zoneRadius": 50,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": true,
+          "IsDestroyedWithParent": false
+        }
+      ]
+    },
+    {
+      "additive": false,
+      "assetStoreId": "a601135e35f22fd34f5ea8ef1d784e1a1e371f48b5bc2ea228ced5f9b05388e4",
+      "destroyWhenNoParticles": false,
+      "emitterAngleA": 0,
+      "emitterAngleB": 35,
+      "emitterForceMax": 100,
+      "emitterForceMin": 50,
+      "flow": 500,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 1500,
+      "name": "Avalanche2",
+      "particleAlpha1": 186,
+      "particleAlpha2": 117,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 250,
+      "particleBlue2": 255,
+      "particleColor1": "134;188;250",
+      "particleColor2": "179;214;255",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 188,
+      "particleGreen2": 214,
+      "particleLifeTimeMax": 0.6,
+      "particleLifeTimeMin": 0.3,
+      "particleRed1": 134,
+      "particleRed2": 179,
+      "particleSize1": 25,
+      "particleSize2": 50,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 15,
+      "rendererParam2": 1,
+      "rendererType": "Point",
+      "tank": -1,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 50,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": true,
+          "IsDestroyedWithParent": false
+        }
+      ]
+    },
+    {
+      "additive": false,
+      "assetStoreId": "a601135e35f22fd34f5ea8ef1d784e1a1e371f48b5bc2ea228ced5f9b05388e4",
+      "destroyWhenNoParticles": false,
+      "emitterAngleA": 0,
+      "emitterAngleB": 35,
+      "emitterForceMax": 100,
+      "emitterForceMin": 50,
+      "flow": 500,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 1500,
+      "name": "Avalanche3",
+      "particleAlpha1": 186,
+      "particleAlpha2": 117,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 250,
+      "particleBlue2": 255,
+      "particleColor1": "134;188;250",
+      "particleColor2": "179;214;255",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 188,
+      "particleGreen2": 214,
+      "particleLifeTimeMax": 0.6,
+      "particleLifeTimeMin": 0.3,
+      "particleRed1": 134,
+      "particleRed2": 179,
+      "particleSize1": 25,
+      "particleSize2": 50,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 15,
+      "rendererParam2": 1,
+      "rendererType": "Point",
+      "tank": -1,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 50,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": true,
+          "IsDestroyedWithParent": false
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2268,6 +2384,12 @@
       },
       {
         "objectName": "Avalanche"
+      },
+      {
+        "objectName": "Avalanche2"
+      },
+      {
+        "objectName": "Avalanche3"
       }
     ]
   },
@@ -2360,8 +2482,65 @@
           "parameters": [
             "",
             "Avalanche",
-            "avalanche.CenterX()",
+            "avalanche.CenterX()+50",
             "avalanche.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "Avalanche",
+            "90",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Avalanche2",
+            "avalanche.CenterX()+50",
+            "avalanche.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "Avalanche2",
+            "90",
+            "0",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Avalanche3",
+            "avalanche.CenterX()+50",
+            "avalanche.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "RotateTowardAngle"
+          },
+          "parameters": [
+            "Avalanche3",
+            "90",
+            "0",
             ""
           ]
         },
@@ -2406,13 +2585,10 @@
         },
         {
           "type": {
-            "value": "RotateTowardAngle"
+            "value": "Cache"
           },
           "parameters": [
-            "Avalanche",
-            "90",
-            "0",
-            ""
+            "avalanche"
           ]
         }
       ],
@@ -2786,12 +2962,42 @@
           "parameters": [
             "Avalanche",
             "=",
-            "avalanche.CenterX()+100",
+            "avalanche.CenterX()+40",
             "=",
-            "avalanche.CenterY()+16"
+            "avalanche.CenterY()+32"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "Avalanche2",
+            "=",
+            "avalanche.CenterX()+125",
+            "=",
+            "avalanche.CenterY()+32"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "Avalanche3",
+            "=",
+            "avalanche.CenterX()+200",
+            "=",
+            "avalanche.CenterY()+32"
           ]
         }
       ]
+    },
+    {
+      "disabled": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     },
     {
       "colorB": 228,
