@@ -323,8 +323,8 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 0.9054916985951469,
-      "height": 772,
+      "depth": 1,
+      "height": 556,
       "layer": "ExplainPanel",
       "name": "ContentExplainText",
       "persistentUuid": "72ec807a-2e15-4206-bef3-f9a57ec075b7",
@@ -362,7 +362,7 @@
       "name": "ShadedDarkJoystick",
       "persistentUuid": "6fdc7e70-432f-4f56-93b8-f43b90c33547",
       "width": 0,
-      "x": 368,
+      "x": 384,
       "y": 1104,
       "zOrder": 556,
       "numberProperties": [],
@@ -2689,6 +2689,15 @@
         },
         {
           "type": {
+            "value": "SetWindowTitle"
+          },
+          "parameters": [
+            "",
+            "\"Slide to Freedom\""
+          ]
+        },
+        {
+          "type": {
             "value": "PlaySoundCanal"
           },
           "parameters": [
@@ -4766,7 +4775,7 @@
       "isLocked": false,
       "name": "ExplainPanel",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {
