@@ -375,6 +375,86 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Interface/Interface Bleeps/751052bbd3de6938713ebbe8782cc3f6feba91f9e3caf27272335ac4e549c0cd_Complete_02.aac",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "tile_0070.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0070.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile_0071.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0071.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile_0047.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0047.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile_0058.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0058.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile_0059.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0059.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile_0069.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0069.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile_0031.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0031.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile_0048.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0048.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile_0081.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0081.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

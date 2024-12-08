@@ -969,6 +969,7 @@
   },
   "events": [
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1195,6 +1196,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Buttons Management",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
