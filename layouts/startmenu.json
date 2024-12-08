@@ -969,7 +969,6 @@
   },
   "events": [
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1136,7 +1135,7 @@
                 "0",
                 "0",
                 "720",
-                "ScreenHeight()",
+                "SceneWindowHeight()",
                 "",
                 ""
               ]

@@ -76,7 +76,7 @@
     },
     "watermark": {
       "placement": "bottom-left",
-      "showWatermark": true
+      "showWatermark": false
     },
     "authorIds": [],
     "authorUsernames": [],
@@ -487,6 +487,26 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/13d8225be69d0f11b6de965cac0d840e7e63e2510a638af89ae42b052caa2460_Shaded dark joystick thumb.png",
           "name": "Shaded dark joystick thumb.png"
         }
+      },
+      {
+        "file": "impactMetal_heavy_004.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "impactMetal_heavy_004.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "impactMetal_heavy_001.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "impactMetal_heavy_001.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
