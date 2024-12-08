@@ -363,7 +363,7 @@
       "persistentUuid": "6fdc7e70-432f-4f56-93b8-f43b90c33547",
       "width": 0,
       "x": 368,
-      "y": 1136,
+      "y": 1104,
       "zOrder": 556,
       "numberProperties": [],
       "stringProperties": [],
@@ -3212,30 +3212,6 @@
       "actions": [
         {
           "type": {
-            "value": "SetCameraCenterX"
-          },
-          "parameters": [
-            "",
-            "=",
-            "lerp(CameraCenterX(), Player.X(), 0.05)",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetCameraCenterY"
-          },
-          "parameters": [
-            "",
-            "=",
-            "lerp(CameraCenterY() + Player.Stats.offset, Player.Y()+32, 0.05)",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "Cache"
           },
           "parameters": [
@@ -3339,6 +3315,52 @@
             "avalanche.CenterX()+200",
             "=",
             "avalanche.CenterY()+32"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Finished",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "lerp(CameraCenterY() + Player.Stats.offset, Player.Y()+32, 0.05)",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "lerp(CameraCenterX(), Player.X(), 0.05)",
+                "",
+                ""
+              ]
+            }
           ]
         }
       ]
@@ -4176,12 +4198,33 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Scene"
+                    "value": "PlaySoundCanal"
                   },
                   "parameters": [
                     "",
-                    "\"ScoreSubForm\"",
+                    "popo.ogg",
+                    "6",
+                    "",
+                    "75",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "Player"
                   ]
                 },
                 {
@@ -4192,6 +4235,16 @@
                     "PlayerHasWon",
                     "=",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ScoreSubForm\"",
+                    ""
                   ]
                 }
               ]
