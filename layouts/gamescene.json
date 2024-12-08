@@ -609,8 +609,8 @@
       "name": "starterCounter",
       "persistentUuid": "4e3a33f4-a5fb-4248-ba60-44114f71745c",
       "width": 240,
-      "x": 272,
-      "y": 344,
+      "x": 256,
+      "y": 320,
       "zOrder": 4001,
       "numberProperties": [],
       "stringProperties": [],
@@ -638,7 +638,7 @@
         "rowCount": 11,
         "columnCount": 12,
         "tileSize": 16,
-        "tilesWithHitBox": "19,22,23,11,10,34,35,30,69,81,80,79,78,47,1,4,12,24,37,50,51,40,29,17,15,28,14,25,7,60,72,73,61,64,65,77,76"
+        "tilesWithHitBox": "19,22,23,11,10,34,35,30,69,81,80,79,78,47,1,4,12,24,37,50,51,40,29,17,15,28,14,25,7,60,72,73,61,64,65,77,76,31"
       }
     },
     {
@@ -673,6 +673,20 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.05,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        },
+        {
+          "name": "ShakeObject_PositionAngleScale",
+          "type": "ShakeObject::ShakeObject_PositionAngleScale",
+          "Scale": "Scale",
+          "Property": 2.143215748974e-312
+        },
+        {
+          "isFolded": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 500,
@@ -699,7 +713,7 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.25,
+              "timeBetweenFrames": 0.28,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -805,7 +819,7 @@
           "directions": [
             {
               "looping": true,
-              "timeBetweenFrames": 0.25,
+              "timeBetweenFrames": 0.28,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -1669,6 +1683,54 @@
               ]
             }
           ]
+        },
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile_0032.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 2
+                      },
+                      {
+                        "x": 16,
+                        "y": 2
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2251,7 +2313,7 @@
       ],
       "string": "0",
       "font": "",
-      "textAlignment": "left",
+      "textAlignment": "center",
       "characterSize": 120,
       "color": {
         "b": 0,
@@ -2274,7 +2336,7 @@
         "underlined": false,
         "text": "0",
         "font": "",
-        "textAlignment": "left",
+        "textAlignment": "center",
         "verticalTextAlignment": "top",
         "characterSize": 120,
         "color": "0;0;0"
@@ -2482,6 +2544,16 @@
         },
         {
           "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Avalanche",
+            "=",
+            "10000"
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
@@ -2505,6 +2577,16 @@
         },
         {
           "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Avalanche2",
+            "=",
+            "10000"
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
@@ -2524,6 +2606,16 @@
             "90",
             "0",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "Avalanche3",
+            "=",
+            "10000"
           ]
         },
         {
@@ -2579,6 +2671,19 @@
           },
           "parameters": [
             "starterCounter"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "Lyric & Peaceful Space.wav",
+            "9",
+            "yes",
+            "50",
+            ""
           ]
         }
       ],
@@ -2902,19 +3007,31 @@
         },
         {
           "type": {
-            "value": "Wait"
+            "value": "Tween::TweenBehavior::AddObjectScaleTween3"
           },
           "parameters": [
-            "0.5"
+            "starterCounter",
+            "Tween",
+            "\"upscale\"",
+            "3",
+            "\"linear\"",
+            "0.5",
+            "",
+            "no"
           ]
         },
         {
           "type": {
-            "value": "Delete"
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
           },
           "parameters": [
             "starterCounter",
-            ""
+            "Tween",
+            "\"opacity\"",
+            "0",
+            "\"linear\"",
+            "0.5",
+            "yes"
           ]
         }
       ]
@@ -3588,6 +3705,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "jump.ogg",
+                    "2",
+                    "",
+                    "60",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
@@ -3633,16 +3763,6 @@
                     "0.5",
                     "3",
                     "yes"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MettreY"
-                  },
-                  "parameters": [
-                    "Player",
-                    "+",
-                    "15"
                   ]
                 },
                 {
@@ -3700,6 +3820,46 @@
                         "Stats.offset",
                         "-",
                         "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "tween player effect"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Tween",
+                        "\"accelerationPlayerEffect\"",
+                        "Player.X()",
+                        "Player.Y()+16",
+                        "\"linear\"",
+                        "0.1",
+                        ""
                       ]
                     }
                   ]
@@ -3772,6 +3932,30 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "hit.ogg",
+                        "2",
+                        "",
+                        "60",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Flash::Flash::Flash"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Flash",
+                        "0.3",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "SetNumberObjectVariable"
                       },
                       "parameters": [
@@ -3800,6 +3984,18 @@
                         "BonusScore",
                         "+",
                         "15"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CameraShake::ShakeCamera"
+                      },
+                      "parameters": [
+                        "",
+                        "0.15",
+                        "0.05",
+                        "0.05",
+                        ""
                       ]
                     }
                   ]
@@ -3915,7 +4111,7 @@
                   "parameters": [
                     "SnowSki",
                     "=",
-                    "1"
+                    "2"
                   ]
                 },
                 {
@@ -3927,6 +4123,44 @@
                     "90",
                     "0",
                     ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Sprite"
+                      },
+                      "parameters": [
+                        "Player",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "bookFlip2.ogg",
+                        "5",
+                        "",
+                        "20",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -4368,6 +4602,10 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "Flash",
+      "type": "Flash::Flash"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -4386,6 +4624,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngleScale",
+      "type": "ShakeObject::ShakeObject_PositionAngleScale"
     },
     {
       "name": "Sticker",

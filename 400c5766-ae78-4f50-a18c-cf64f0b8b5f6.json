@@ -507,6 +507,78 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "hit.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "hit.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "jump.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "jump.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Lyric & Peaceful Space.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Lyric & Peaceful Space.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "footstep_snow_004.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "footstep_snow_004.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Walk_05.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "f74b549dcd4ad57903dfb7fe8aee3c4f952233d493e73a0976904df40eea37a1_Walk_05.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/SoundEffects/Nox Footsteps/Snow/Walk/f74b549dcd4ad57903dfb7fe8aee3c4f952233d493e73a0976904df40eea37a1_Walk_05.wav",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "bookFlip2.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "bookFlip2.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "tile_0032.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tile_0032.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -544,6 +616,18 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"

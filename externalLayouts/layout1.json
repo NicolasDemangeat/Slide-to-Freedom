@@ -169,7 +169,7 @@
       "width": 0,
       "x": 16,
       "y": 16,
-      "zOrder": 1,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [
         {
@@ -367,7 +367,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.6337626779315035,
+    "zoomFactor": 0.5843784410740942,
     "windowMask": false
   }
 }
