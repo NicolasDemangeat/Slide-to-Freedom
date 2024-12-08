@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6672773998329988,
+    "zoomFactor": 0.6244537826600003,
     "windowMask": false
   },
   "objectsGroups": [
@@ -257,8 +257,8 @@
       "layer": "ExplainPanel",
       "name": "explainPannelBackground",
       "persistentUuid": "63faeeb9-f705-4a36-9294-1c3467bd1b0b",
-      "width": 709,
-      "x": 0,
+      "width": 688,
+      "x": 16,
       "y": 128,
       "zOrder": 553,
       "numberProperties": [],
@@ -329,7 +329,7 @@
       "name": "ContentExplainText",
       "persistentUuid": "72ec807a-2e15-4206-bef3-f9a57ec075b7",
       "width": 680,
-      "x": 14,
+      "x": 19,
       "y": 260,
       "zOrder": 555,
       "numberProperties": [],
@@ -362,7 +362,7 @@
       "name": "ShadedDarkJoystick",
       "persistentUuid": "6fdc7e70-432f-4f56-93b8-f43b90c33547",
       "width": 0,
-      "x": 384,
+      "x": 352,
       "y": 1104,
       "zOrder": 556,
       "numberProperties": [],
@@ -396,8 +396,8 @@
       "name": "ContinuButton",
       "persistentUuid": "fe49e149-b6d6-40cc-b841-ac61947690d2",
       "width": 224,
-      "x": 224,
-      "y": 848,
+      "x": 240,
+      "y": 864,
       "zOrder": 557,
       "numberProperties": [],
       "stringProperties": [],
@@ -1742,7 +1742,18 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 0,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -1804,7 +1815,18 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 0,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
       "string": "It's time to reclaim your freedom...",
       "font": "",
       "textAlignment": "center",
@@ -1846,7 +1868,18 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 0,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 0,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
       "string": "You’ve finally made up your mind to leave… Leave for what? You don’t know, but you’re doing it anyway.\nIt has been snowing for weeks. You would have loved to take your sled, but it’s been broken since your last run...\nSo, skis it is.\n\nYou begin your descent, but after only a few minutes, a deep, thunderous rumble echoes behind you — an avalanche!\n\nHurry! Run! Run to finally be free…",
       "font": "",
       "textAlignment": "center",
@@ -1884,7 +1917,18 @@
       "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 4,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 4,
+          "topEdgeAnchor": 0,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
       "content": {},
       "childrenContent": {
         "Border": {
@@ -1971,7 +2015,18 @@
         }
       ],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 3,
+          "leftEdgeAnchor": 4,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": false,
+          "rightEdgeAnchor": 4,
+          "topEdgeAnchor": 0,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
       "content": {
         "LeftPadding": 16,
         "RightPadding": 16,
@@ -2477,6 +2532,16 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Score",
+            "=",
+            "0"
+          ]
+        },
         {
           "type": {
             "value": "ZoomCamera"
@@ -4676,6 +4741,290 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "z"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Up\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "q"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Left\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "s"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Down\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "d"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Right\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "z"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "d"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Up\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Right\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "z"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "q"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Up\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Left\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "s"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "d"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Down\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Right\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "s"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "q"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Down\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Left\""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -4797,6 +5146,10 @@
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.71303776306904,
+    "zoomFactor": 0.5117784035210177,
     "windowMask": true
   },
   "objectsGroups": [
@@ -649,7 +649,7 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "PoPi Game Studio\nVincent\nNicolas\n\nAssets Sounds Music\nKenney\nSe.R'",
+      "string": "PoPi Game Studio\nVincent\nNicolas\n\nAssets Sounds Music\nKenney\nS.e.R'",
       "font": "",
       "textAlignment": "center",
       "characterSize": 60,
@@ -672,7 +672,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "PoPi Game Studio\nVincent\nNicolas\n\nAssets Sounds Music\nKenney\nSe.R'",
+        "text": "PoPi Game Studio\nVincent\nNicolas\n\nAssets Sounds Music\nKenney\nS.e.R'",
         "font": "",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
@@ -1135,7 +1135,7 @@
                 "0",
                 "0",
                 "720",
-                "1280",
+                "ScreenHeight()",
                 "",
                 ""
               ]
@@ -1165,7 +1165,7 @@
               "parameters": [
                 "",
                 "720",
-                "1280",
+                "ScreenHeight()",
                 ""
               ]
             },
