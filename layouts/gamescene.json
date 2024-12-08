@@ -72,8 +72,8 @@
       "persistentUuid": "a44bb3a4-4644-4719-a18f-ad065c86872d",
       "width": 0,
       "x": 320,
-      "y": 16,
-      "zOrder": 3,
+      "y": 112,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -206,7 +206,7 @@
       "persistentUuid": "ff983e46-6434-4fee-9ef7-3f3586691aad",
       "width": 0,
       "x": 0,
-      "y": -272,
+      "y": -304,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [
@@ -227,8 +227,8 @@
       "persistentUuid": "2d3069c5-c4a8-426e-abdb-3343ff0a5ac2",
       "width": 0,
       "x": 16,
-      "y": 80,
-      "zOrder": 15,
+      "y": 64,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [
         {
@@ -244,7 +244,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "UI",
-      "name": "SpeedText",
+      "name": "ScoreText",
       "persistentUuid": "3ac1065d-a06b-4908-8f04-f604430086c9",
       "width": 0,
       "x": 16,
@@ -260,12 +260,110 @@
       "height": 0,
       "keepRatio": true,
       "layer": "UI",
-      "name": "SpeedValue",
+      "name": "ScoreValue",
       "persistentUuid": "2f2ba411-ca83-43a8-9b7f-bcb9832fba40",
       "width": 0,
       "x": 172,
       "y": 48,
       "zOrder": 552,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 864,
+      "layer": "ExplainPanel",
+      "name": "explainPannelBackground",
+      "persistentUuid": "63faeeb9-f705-4a36-9294-1c3467bd1b0b",
+      "width": 709,
+      "x": 0,
+      "y": 128,
+      "zOrder": 553,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 60,
+      "keepRatio": true,
+      "layer": "ExplainPanel",
+      "name": "TitleExplainText",
+      "persistentUuid": "de2ebd88-18e0-4305-802a-3eae5e41c079",
+      "width": 599,
+      "x": 64,
+      "y": 157,
+      "zOrder": 554,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0.9054916985951469,
+      "height": 772,
+      "layer": "ExplainPanel",
+      "name": "ContentExplainText",
+      "persistentUuid": "72ec807a-2e15-4206-bef3-f9a57ec075b7",
+      "width": 680,
+      "x": 14,
+      "y": 260,
+      "zOrder": 555,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "ShadedDarkJoystick",
+      "persistentUuid": "6fdc7e70-432f-4f56-93b8-f43b90c33547",
+      "width": 0,
+      "x": 336,
+      "y": 1136,
+      "zOrder": 556,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "ExplainPanel",
+      "name": "ContinuButton",
+      "persistentUuid": "fe49e149-b6d6-40cc-b841-ac61947690d2",
+      "width": 224,
+      "x": 224,
+      "y": 848,
+      "zOrder": 557,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Layer",
+      "name": "explainPannelBackground",
+      "persistentUuid": "6b45fa9d-dda1-43aa-aec6-dbc29c0a4ea8",
+      "width": 0,
+      "x": 944,
+      "y": 288,
+      "zOrder": 558,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -327,10 +425,10 @@
       "effects": [],
       "behaviors": [
         {
-          "acceleration": 500,
-          "maxSpeed": 150,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 500,
+          "maxSpeed": 150,
           "rotateObject": false,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -1020,14 +1118,14 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "SpeedText",
+      "name": "ScoreText",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "SPEED :",
+      "string": "SCORE :",
       "font": "",
       "textAlignment": "left",
       "characterSize": 35,
@@ -1050,7 +1148,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "SPEED :",
+        "text": "SCORE :",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
@@ -1062,7 +1160,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "SpeedValue",
+      "name": "ScoreValue",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -1142,7 +1240,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "tile_0069.png",
+                  "image": "tile_0048.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1158,19 +1256,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 0
+                        "x": 0,
+                        "y": 2
                       },
                       {
-                        "x": 15,
-                        "y": 0
+                        "x": 16,
+                        "y": 2
                       },
                       {
-                        "x": 15,
+                        "x": 16,
                         "y": 16
                       },
                       {
-                        "x": 1,
+                        "x": 0,
                         "y": 16
                       }
                     ]
@@ -1206,19 +1304,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 0
+                        "x": 0,
+                        "y": 2
                       },
                       {
-                        "x": 15,
-                        "y": 0
+                        "x": 16,
+                        "y": 2
                       },
                       {
-                        "x": 15,
+                        "x": 16,
                         "y": 16
                       },
                       {
-                        "x": 1,
+                        "x": 0,
                         "y": 16
                       }
                     ]
@@ -1238,7 +1336,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "tile_0048.png",
+                  "image": "tile_0069.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1254,19 +1352,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 0
+                        "x": 0,
+                        "y": 2
                       },
                       {
-                        "x": 15,
-                        "y": 0
+                        "x": 16,
+                        "y": 2
                       },
                       {
-                        "x": 15,
+                        "x": 16,
                         "y": 16
                       },
                       {
-                        "x": 1,
+                        "x": 0,
                         "y": 16
                       }
                     ]
@@ -1302,19 +1400,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 1,
-                        "y": 0
+                        "x": 0,
+                        "y": 2
                       },
                       {
-                        "x": 15,
-                        "y": 0
+                        "x": 16,
+                        "y": 2
                       },
                       {
-                        "x": 15,
+                        "x": 16,
                         "y": 16
                       },
                       {
-                        "x": 1,
+                        "x": 0,
                         "y": 16
                       }
                     ]
@@ -1325,11 +1423,457 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "explainPannelBackground",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Container2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 0
+                      },
+                      {
+                        "x": 1921,
+                        "y": 0
+                      },
+                      {
+                        "x": 1921,
+                        "y": 1200
+                      },
+                      {
+                        "x": 1,
+                        "y": 1200
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "TitleExplainText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "It's time to reclaim your freedom...",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 35,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "126;185;252",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "It's time to reclaim your freedom...",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 35,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "ContentExplainText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "You’ve finally made up your mind to leave… Leave for what? You don’t know, but you’re doing it anyway.\nIt has been snowing for weeks. You would have loved to take your sled, but it’s been broken since your last run...\nSo, skis it is.\n\nYou begin your descent, but after only a few minutes, a deep, thunderous rumble echoes behind you — an avalanche!\n\nHurry! Run! Run to finally be free…",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 35,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "126;185;252",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "You’ve finally made up your mind to leave… Leave for what? You don’t know, but you’re doing it anyway.\nIt has been snowing for weeks. You would have loved to take your sled, but it’s been broken since your last run...\nSo, skis it is.\n\nYou begin your descent, but after only a few minutes, a deep, thunderous rumble echoes behind you — an avalanche!\n\nHurry! Run! Run to finally be free…",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 35,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "9be1b0d0d5a1afad4537db989ea5e3a4a4564dfd123630a9bf61330a73803c63",
+      "name": "ShadedDarkJoystick",
+      "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Border": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Shaded dark joystick border.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "Thumb": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Shaded dark joystick thumb.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+      "name": "ContinuButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [
+        {
+          "name": "state",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Next...",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 60,
+          "color": {
+            "b": 79,
+            "g": 72,
+            "r": 72
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Next...",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "color": "72;72;79"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "ContentObjectifText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "- Hit the ramps to go faster.\n\n\n- Avoid the obstacles in your path.\n\n\n- Don’t get caught by the avalanche!\n\n\n- Reach the bottom of the mountain and reclaim your freedom.",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "126;185;252",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "- Hit the ramps to go faster.\n\n\n- Avoid the obstacles in your path.\n\n\n- Don’t get caught by the avalanche!\n\n\n- Reach the bottom of the mountain and reclaim your freedom.",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "TitleObjectifText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "GAME OBJECTIF",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 35,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "126;185;252",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "GAME OBJECTIF",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 35,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "pannel",
+        "children": [
+          {
+            "folderName": "objectifPanel",
+            "children": [
+              {
+                "objectName": "TitleObjectifText"
+              },
+              {
+                "objectName": "ContentObjectifText"
+              }
+            ]
+          },
+          {
+            "objectName": "explainPannelBackground"
+          },
+          {
+            "objectName": "ContinuButton"
+          },
+          {
+            "folderName": "explainPanel",
+            "children": [
+              {
+                "objectName": "TitleExplainText"
+              },
+              {
+                "objectName": "ContentExplainText"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "folderName": "UI",
+        "children": [
+          {
+            "objectName": "ShadedDarkJoystick"
+          },
+          {
+            "objectName": "ScoreValue"
+          },
+          {
+            "objectName": "ScoreText"
+          }
+        ]
+      },
       {
         "objectName": "TileMapPacked"
       },
@@ -1344,12 +1888,6 @@
       },
       {
         "objectName": "obstacles2"
-      },
-      {
-        "objectName": "SpeedText"
-      },
-      {
-        "objectName": "SpeedValue"
       },
       {
         "objectName": "BottomChecker"
@@ -1449,6 +1987,304 @@
             "0",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "avalanche",
+            "\"gamestart\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"ExplainPanel\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "ContinuButton",
+            "state",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeLayerTimeScale"
+          },
+          "parameters": [
+            "",
+            "",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "avalanche"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SystemInfo::HasTouchScreen"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ShadedDarkJoystick"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "toggle layer pannels"
+    },
+    {
+      "folded": true,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "ContinuButton",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "ContinuButton",
+            "state",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "click1.ogg",
+            "2",
+            "",
+            "30",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "TitleExplainText",
+            "Text",
+            "=",
+            "\"OBJECTIF\""
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
+            "ContentExplainText",
+            "Text",
+            "=",
+            "\"- Hit the ramps to go faster.\nuse arrow key or the joystick on mobile\n\n- Avoid the obstacles in your path.\n\n\n- Don’t get caught by the avalanche!\n\n\n- Reach the bottom of the mountain and reclaim your freedom.\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "ContinuButton",
+            "state",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+          },
+          "parameters": [
+            "ContinuButton",
+            "",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "ContinuButton",
+                "state",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "ContinuButton",
+                "state",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "ContinuButton",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "ContinuButton",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "ContinuButton",
+            "state",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "click1.ogg",
+            "2",
+            "",
+            "30",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"ExplainPanel\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeLayerTimeScale"
+          },
+          "parameters": [
+            "",
+            "",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Player",
+            "\"scoreTimer\""
+          ]
         }
       ]
     },
@@ -1547,10 +2383,20 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
-            "SpeedValue",
+            "ScoreValue",
             "Text",
             "=",
-            "Player.Stats.maxSpeed"
+            "Score"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Score",
+            "=",
+            "ceil(Player.ObjectTimerElapsedTime(\"scoreTimer\")) + BonusScore"
           ]
         }
       ]
@@ -1560,6 +2406,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Randomize Layer",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1874,7 +2721,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Player collision withe object"
+              "comment": "Player collision with boost"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -1957,9 +2804,31 @@
                     "+",
                     "15"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "BonusScore",
+                    "+",
+                    "20"
+                  ]
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "the stat player offset is set to 4 at the begging of the game"
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -1971,7 +2840,7 @@
                         "Player",
                         "Stats.offset",
                         ">",
-                        "5"
+                        "3"
                       ]
                     },
                     {
@@ -1996,6 +2865,18 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Player collision obstacle slow"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -2070,7 +2951,69 @@
                         "-",
                         "5"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "BonusScore",
+                        "-",
+                        "10"
+                      ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "GAME OVER"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "avalanche",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "avalanche",
+                    "\"gamestart\"",
+                    ">=",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ScoreSubForm\"",
+                    ""
                   ]
                 }
               ]
@@ -2083,77 +3026,342 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Player Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "events": [
             {
-              "type": {
-                "value": "TopDownMovementBehavior::IsMoving"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::IsMoving"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "SnowSki",
+                    "Player.PointX(\"snowSkiPoint1\")",
+                    "Player.PointY(\"snowSkiPoint1\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "SnowSki",
+                    "Player.PointX(\"snowSkiPoint2\")",
+                    "Player.PointY(\"snowSkiPoint2\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "SnowSki",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RotateTowardAngle"
+                  },
+                  "parameters": [
+                    "SnowSki",
+                    "90",
+                    "0",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "Player",
-                "TopDownMovement"
+              "comment": "JOYSTICK MANAGEMENT\n"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
+                  },
+                  "parameters": [
+                    "ShadedDarkJoystick",
+                    "\"Up\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Up\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
+                  },
+                  "parameters": [
+                    "ShadedDarkJoystick",
+                    "\"Down\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Down\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
+                  },
+                  "parameters": [
+                    "ShadedDarkJoystick",
+                    "\"Left\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Left\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
+                  },
+                  "parameters": [
+                    "ShadedDarkJoystick",
+                    "\"Right\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Right\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
+                  },
+                  "parameters": [
+                    "ShadedDarkJoystick",
+                    "\"UpLeft\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Up\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Left\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
+                  },
+                  "parameters": [
+                    "ShadedDarkJoystick",
+                    "\"UpRight\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Up\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Right\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
+                  },
+                  "parameters": [
+                    "ShadedDarkJoystick",
+                    "\"DownLeft\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Down\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Left\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
+                  },
+                  "parameters": [
+                    "ShadedDarkJoystick",
+                    "\"DownRight\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Down\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "\"Right\""
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "SnowSki",
-                "Player.PointX(\"snowSkiPoint1\")",
-                "Player.PointY(\"snowSkiPoint1\")",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "SnowSki",
-                "Player.PointX(\"snowSkiPoint2\")",
-                "Player.PointY(\"snowSkiPoint2\")",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ChangePlan"
-              },
-              "parameters": [
-                "SnowSki",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "RotateTowardAngle"
-              },
-              "parameters": [
-                "SnowSki",
-                "90",
-                "0",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "parameters": []
         }
       ],
       "parameters": []
@@ -2216,6 +3424,39 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "ExplainPanel",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

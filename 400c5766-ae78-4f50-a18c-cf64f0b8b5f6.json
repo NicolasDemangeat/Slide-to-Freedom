@@ -455,6 +455,38 @@
         "name": "tile_0081.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "Container2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Container2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Shaded dark joystick border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Shaded dark joystick border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/dd6e3c2d11ba02bd5a052cd47908e851b656d0fb492b52006afa4843e597d0cc_Shaded dark joystick border.png",
+          "name": "Shaded dark joystick border.png"
+        }
+      },
+      {
+        "file": "assets/Shaded dark joystick thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Shaded dark joystick thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/13d8225be69d0f11b6de965cac0d840e7e63e2510a638af89ae42b052caa2460_Shaded dark joystick thumb.png",
+          "name": "Shaded dark joystick thumb.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -468,7 +500,12 @@
     {
       "name": "Score",
       "type": "number",
-      "value": 1
+      "value": 0
+    },
+    {
+      "name": "BonusScore",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -487,6 +524,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/sticker"
