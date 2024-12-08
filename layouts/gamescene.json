@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7130377630690412,
+    "zoomFactor": 1.3841198046306862,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1822,6 +1822,53 @@
         "characterSize": 35,
         "color": "255;255;255"
       }
+    },
+    {
+      "additive": false,
+      "assetStoreId": "a601135e35f22fd34f5ea8ef1d784e1a1e371f48b5bc2ea228ced5f9b05388e4",
+      "destroyWhenNoParticles": false,
+      "emitterAngleA": 0,
+      "emitterAngleB": 45,
+      "emitterForceMax": 100,
+      "emitterForceMin": 20,
+      "flow": 700,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 1000,
+      "name": "Avalanche",
+      "particleAlpha1": 186,
+      "particleAlpha2": 117,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 250,
+      "particleBlue2": 255,
+      "particleColor1": "134;188;250",
+      "particleColor2": "179;214;255",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 188,
+      "particleGreen2": 214,
+      "particleLifeTimeMax": 0.6,
+      "particleLifeTimeMin": 0.3,
+      "particleRed1": 134,
+      "particleRed2": 179,
+      "particleSize1": 25,
+      "particleSize2": 50,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 15,
+      "rendererParam2": 1,
+      "rendererType": "Point",
+      "tank": -1,
+      "textureParticleName": "",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 50,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -1903,6 +1950,9 @@
       },
       {
         "objectName": "SnowSki"
+      },
+      {
+        "objectName": "Avalanche"
       }
     ]
   },
@@ -1990,6 +2040,18 @@
         },
         {
           "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Avalanche",
+            "avalanche.CenterX()",
+            "avalanche.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "ResetObjectTimer"
           },
           "parameters": [
@@ -2029,10 +2091,13 @@
         },
         {
           "type": {
-            "value": "Cache"
+            "value": "RotateTowardAngle"
           },
           "parameters": [
-            "avalanche"
+            "Avalanche",
+            "90",
+            "0",
+            ""
           ]
         }
       ],
@@ -2397,6 +2462,18 @@
             "Score",
             "=",
             "ceil(Player.ObjectTimerElapsedTime(\"scoreTimer\")) + BonusScore"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "Avalanche",
+            "=",
+            "avalanche.CenterX()+100",
+            "=",
+            "avalanche.CenterY()+16"
           ]
         }
       ]
@@ -3458,7 +3535,7 @@
       "isLocked": false,
       "name": "ExplainPanel",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
