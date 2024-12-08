@@ -64,23 +64,6 @@
       "keepRatio": true,
       "layer": "",
       "name": "obstacle",
-      "persistentUuid": "a21bc761-d953-437d-9651-820531af7cc5",
-      "width": 16,
-      "x": 224,
-      "y": 592,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 16,
-      "keepRatio": true,
-      "layer": "",
-      "name": "obstacle",
       "persistentUuid": "0eb59772-ba94-4d61-8dfa-02242cdba3fd",
       "width": 16,
       "x": 240,
@@ -186,7 +169,7 @@
       "width": 0,
       "x": 16,
       "y": 16,
-      "zOrder": 11,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [
         {
@@ -367,7 +350,7 @@
       "persistentUuid": "0b4e4a6e-3dd2-4e0b-92ad-725bafaaf4af",
       "width": 16,
       "x": 224,
-      "y": 608,
+      "y": 624,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -384,7 +367,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.0269425874981086,
+    "zoomFactor": 1.6337626779315035,
     "windowMask": false
   }
 }
