@@ -2341,6 +2341,17 @@
         "characterSize": 120,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Finished",
+      "texture": "Finished2-1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -2434,6 +2445,9 @@
       },
       {
         "objectName": "Avalanche3"
+      },
+      {
+        "objectName": "Finished"
       }
     ]
   },
@@ -3363,7 +3377,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Randomize Layer",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3380,6 +3393,16 @@
                 ">",
                 "BottomChecker.Y() - 1280"
               ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "LayoutRenderingCount",
+                "<=",
+                "LayoutRenderingMax"
+              ]
             }
           ],
           "actions": [
@@ -3392,9 +3415,67 @@
                 "=",
                 "RandomInRange(1,3)"
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LayoutRenderingCount",
+                "+",
+                "1"
+              ]
             }
           ],
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "LayoutRenderingCount",
+                    "=",
+                    "LayoutRenderingMax"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                  },
+                  "parameters": [
+                    "",
+                    "\"LayoutEndOfGame\"",
+                    "BottomChecker.X()",
+                    "BottomChecker.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "BottomChecker",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LayoutRenderingCount",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -4050,6 +4131,67 @@
                     "",
                     "\"ScoreSubForm\"",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PlayerHasWon",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "WIN MANAGEMENT"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Finished",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ScoreSubForm\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "PlayerHasWon",
+                    "=",
+                    "1"
                   ]
                 }
               ]

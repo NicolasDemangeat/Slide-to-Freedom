@@ -579,6 +579,14 @@
         "name": "tile_0032.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "Finished2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Finished2-1.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -596,6 +604,21 @@
     },
     {
       "name": "BonusScore",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "LayoutRenderingCount",
+      "type": "number",
+      "value": 1
+    },
+    {
+      "name": "LayoutRenderingMax",
+      "type": "number",
+      "value": 11
+    },
+    {
+      "name": "PlayerHasWon",
       "type": "number",
       "value": 0
     }
@@ -649,6 +672,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/externalLayouts/layout2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/layoutendofgame"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
