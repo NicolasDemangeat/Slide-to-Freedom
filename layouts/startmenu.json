@@ -68,7 +68,7 @@
       "name": "TitleText",
       "persistentUuid": "9043308f-1359-4d6a-bee2-67e5eed6d72a",
       "width": 520,
-      "x": 104,
+      "x": 120,
       "y": 80,
       "zOrder": 2,
       "numberProperties": [],
@@ -224,6 +224,40 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 928,
+      "keepRatio": true,
+      "layer": "",
+      "name": "container",
+      "persistentUuid": "a3776897-f64b-4548-be5a-9ff4c8be843b",
+      "width": 688,
+      "x": 16,
+      "y": 80,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 432,
+      "keepRatio": true,
+      "layer": "",
+      "name": "container2",
+      "persistentUuid": "05e50ab4-ac40-44a2-a94b-be3e6e24c3ce",
+      "width": 416,
+      "x": 160,
+      "y": 272,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -239,14 +273,15 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 4,
-          "name": "Anchor",
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 4,
-          "topEdgeAnchor": 1,
-          "type": "AnchorBehavior::AnchorBehavior",
-          "useLegacyBottomAndRightAnchors": false
+          "name": "FlexItem",
+          "type": "FlexBox::FlexItem",
+          "ContainerID": "StartContainer",
+          "Growth": 1,
+          "Shrink": 1,
+          "Order": 1,
+          "AlignSelf": "auto",
+          "FullWidth": false,
+          "FullHeight": false
         }
       ],
       "string": "Slide for Freedom",
@@ -288,14 +323,15 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 0,
-          "name": "Anchor",
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 1,
-          "type": "AnchorBehavior::AnchorBehavior",
-          "useLegacyBottomAndRightAnchors": false
+          "name": "FlexItem",
+          "type": "FlexBox::FlexItem",
+          "ContainerID": "StartContainerChild",
+          "Growth": 1,
+          "Shrink": 1,
+          "Order": 1,
+          "AlignSelf": "auto",
+          "FullWidth": false,
+          "FullHeight": false
         }
       ],
       "content": {
@@ -383,14 +419,15 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 0,
-          "name": "Anchor",
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 1,
-          "type": "AnchorBehavior::AnchorBehavior",
-          "useLegacyBottomAndRightAnchors": false
+          "name": "FlexItem",
+          "type": "FlexBox::FlexItem",
+          "ContainerID": "StartContainerChild",
+          "Growth": 1,
+          "Shrink": 1,
+          "Order": 2,
+          "AlignSelf": "auto",
+          "FullWidth": false,
+          "FullHeight": false
         }
       ],
       "content": {
@@ -478,14 +515,15 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 0,
-          "name": "Anchor",
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 1,
-          "type": "AnchorBehavior::AnchorBehavior",
-          "useLegacyBottomAndRightAnchors": false
+          "name": "FlexItem",
+          "type": "FlexBox::FlexItem",
+          "ContainerID": "StartContainerChild",
+          "Growth": 1,
+          "Shrink": 1,
+          "Order": 3,
+          "AlignSelf": "auto",
+          "FullWidth": false,
+          "FullHeight": false
         }
       ],
       "content": {
@@ -573,14 +611,15 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 4,
-          "leftEdgeAnchor": 0,
-          "name": "Anchor",
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 0,
-          "type": "AnchorBehavior::AnchorBehavior",
-          "useLegacyBottomAndRightAnchors": false
+          "name": "FlexItem",
+          "type": "FlexBox::FlexItem",
+          "ContainerID": "StartContainer",
+          "Growth": 1,
+          "Shrink": 1,
+          "Order": 3,
+          "AlignSelf": "auto",
+          "FullWidth": false,
+          "FullHeight": false
         }
       ],
       "content": {
@@ -1029,6 +1068,173 @@
         "characterSize": 60,
         "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "container",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 1,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        },
+        {
+          "name": "FlexContainer",
+          "type": "FlexBox::FlexContainer",
+          "ID": "StartContainer",
+          "Direction": "down",
+          "Wrap": "nowrap",
+          "JustifyContent": "space-evenly",
+          "AlignItems": "center",
+          "AlignContent": "normal",
+          "Gap": 150
+        }
+      ],
+      "animations": [
+        {
+          "name": "Container",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Container",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "container2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FlexContainer",
+          "type": "FlexBox::FlexContainer",
+          "ID": "StartContainerChild",
+          "Direction": "down",
+          "Wrap": "nowrap",
+          "JustifyContent": "space-around",
+          "AlignItems": "center",
+          "AlignContent": "space-around",
+          "Gap": 60
+        },
+        {
+          "name": "FlexItem",
+          "type": "FlexBox::FlexItem",
+          "ContainerID": "StartContainer",
+          "Growth": 1,
+          "Shrink": 1,
+          "Order": 2,
+          "AlignSelf": "auto",
+          "FullWidth": false,
+          "FullHeight": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1066,6 +1272,12 @@
       },
       {
         "objectName": "Snow"
+      },
+      {
+        "objectName": "container"
+      },
+      {
+        "objectName": "container2"
       }
     ]
   },
@@ -1099,6 +1311,22 @@
           "parameters": [
             "",
             "\"Credit\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "container"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "container2"
           ]
         }
       ],
@@ -1446,6 +1674,15 @@
                 "",
                 "\"Credit\""
               ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -1459,6 +1696,15 @@
               "parameters": [
                 "BackButton",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Credit\""
               ]
             },
             {
@@ -1485,11 +1731,28 @@
             },
             {
               "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.3"
+              ]
+            },
+            {
+              "type": {
                 "value": "HideLayer"
               },
               "parameters": [
                 "",
                 "\"Credit\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                ""
               ]
             }
           ]
@@ -1504,6 +1767,16 @@
               "parameters": [
                 "QuitGameButton",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Credit\""
               ]
             },
             {
@@ -1741,6 +2014,14 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FlexContainer",
+      "type": "FlexBox::FlexContainer"
+    },
+    {
+      "name": "FlexItem",
+      "type": "FlexBox::FlexItem"
     },
     {
       "name": "Flippable",

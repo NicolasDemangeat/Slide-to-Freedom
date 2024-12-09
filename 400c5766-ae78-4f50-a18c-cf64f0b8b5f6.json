@@ -21,7 +21,7 @@
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Slide to Freedom",
-    "description": "Game Jam Mehu Jam #6",
+    "description": "Peace Racing Game",
     "author": "PoPi Game Studio",
     "windowWidth": 720,
     "windowHeight": 1080,
@@ -86,8 +86,13 @@
       "Morkai",
       "vincentdeazy"
     ],
-    "categories": [],
-    "playableDevices": [],
+    "categories": [
+      "racing"
+    ],
+    "playableDevices": [
+      "keyboard",
+      "mobile"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -473,6 +478,22 @@
         "name": "Popi2.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Container.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Container.png\"}",
+        "name": "Container",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -525,6 +546,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flexbox"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/isonscreen"
