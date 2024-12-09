@@ -980,7 +980,17 @@
           ]
         }
       ],
-      "actions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "PrioritizeLoadingOfScene"
+          },
+          "parameters": [
+            "",
+            "\"GameScene\""
+          ]
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",

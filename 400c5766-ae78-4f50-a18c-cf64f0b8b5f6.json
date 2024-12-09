@@ -317,22 +317,6 @@
         "userAdded": false
       },
       {
-        "file": "tile_0058.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tile_0058.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "tile_0059.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tile_0059.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "tile_0069.png",
         "kind": "image",
         "metadata": "",
@@ -528,11 +512,11 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/gamescene"
+      "referenceTo": "/layouts/startmenu"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/startmenu"
+      "referenceTo": "/layouts/gamescene"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -541,6 +525,10 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/isonscreen"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/shakeobject"

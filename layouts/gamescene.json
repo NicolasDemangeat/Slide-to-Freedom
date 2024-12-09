@@ -18,10 +18,18 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6244537826600003,
+    "zoomFactor": 0.6040838749988883,
     "windowMask": false
   },
   "objectsGroups": [
+    {
+      "name": "obstaclesGroup",
+      "objects": [
+        {
+          "name": "obstacles2"
+        }
+      ]
+    },
     {
       "name": "AllObjects",
       "objects": [
@@ -40,14 +48,6 @@
         {
           "name": "obstacle"
         },
-        {
-          "name": "obstacles2"
-        }
-      ]
-    },
-    {
-      "name": "obstaclesGroup",
-      "objects": [
         {
           "name": "obstacles2"
         }
@@ -355,15 +355,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 176,
       "keepRatio": true,
       "layer": "UI",
       "name": "ShadedDarkJoystick",
       "persistentUuid": "6fdc7e70-432f-4f56-93b8-f43b90c33547",
-      "width": 0,
-      "x": 352,
-      "y": 1104,
+      "width": 176,
+      "x": 376,
+      "y": 1112,
       "zOrder": 556,
       "numberProperties": [],
       "stringProperties": [],
@@ -625,6 +626,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [
+        {
+          "name": "InOnScreen",
+          "type": "IsOnScreen::InOnScreen"
+        },
         {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior",
@@ -1277,102 +1282,6 @@
           "type": "Sticker::Sticker",
           "OnlyFollowPosition": true,
           "IsDestroyedWithParent": false
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "skiTrack",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.15,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "tile_0058.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 0
-                      },
-                      {
-                        "x": 12,
-                        "y": 0
-                      },
-                      {
-                        "x": 12,
-                        "y": 16
-                      },
-                      {
-                        "x": 4,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "tile_0059.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 4,
-                        "y": 0
-                      },
-                      {
-                        "x": 12,
-                        "y": 0
-                      },
-                      {
-                        "x": 12,
-                        "y": 16
-                      },
-                      {
-                        "x": 4,
-                        "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -2464,9 +2373,6 @@
       },
       {
         "objectName": "TileMapPacked"
-      },
-      {
-        "objectName": "skiTrack"
       },
       {
         "objectName": "obstacle"
@@ -3789,7 +3695,7 @@
               "parameters": [
                 "AllObjects",
                 "<",
-                "Player.Y() - 1280 - CameraCenterY()"
+                "Player.Y() - 1500"
               ]
             }
           ],
@@ -3872,13 +3778,12 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "Distance"
                   },
                   "parameters": [
                     "Player",
                     "Springboard",
-                    "",
-                    "",
+                    "16",
                     ""
                   ]
                 },
@@ -4070,13 +3975,12 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "CollisionNP"
+                    "value": "Distance"
                   },
                   "parameters": [
                     "Player",
                     "obstacles2",
-                    "",
-                    "",
+                    "16",
                     ""
                   ]
                 }
@@ -5184,6 +5088,10 @@
     {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "InOnScreen",
+      "type": "IsOnScreen::InOnScreen"
     },
     {
       "name": "Opacity",
