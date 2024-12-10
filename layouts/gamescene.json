@@ -356,23 +356,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 48,
-      "height": 176,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "ShadedDarkJoystick",
-      "persistentUuid": "6fdc7e70-432f-4f56-93b8-f43b90c33547",
-      "width": 176,
-      "x": 392,
-      "y": 920,
-      "zOrder": 556,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 1,
       "height": 16,
       "keepRatio": true,
@@ -642,6 +625,22 @@
         }
       ],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "ShadedDarkJoystick",
+      "persistentUuid": "1fb5c0c4-ffea-4f2e-9e8e-987e43ff1d6a",
+      "width": 0,
+      "x": 384,
+      "y": 944,
+      "zOrder": 4002,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -704,6 +703,7 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
           "name": "Flash",
           "type": "Flash::Flash",
           "HalfPeriodTime": 0.05,
@@ -711,6 +711,7 @@
           "FlashDuration": 0
         },
         {
+          "isFolded": true,
           "name": "ShakeObject_PositionAngleScale",
           "type": "ShakeObject::ShakeObject_PositionAngleScale",
           "Scale": "Scale",
@@ -733,6 +734,15 @@
           "viewpoint": "TopDown"
         },
         {
+          "name": "TopDownMultitouchMapper",
+          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
+          "TopDownMovement": "TopDownMovement",
+          "ControllerIdentifier": 1,
+          "JoystickIdentifier": "Primary",
+          "StickMode": "360°"
+        },
+        {
+          "isFolded": true,
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -1679,10 +1689,10 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 2,
           "name": "Anchor",
-          "topEdgeAnchor": 1,
           "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 2,
+          "topEdgeAnchor": 1,
           "leftEdgeAnchor": 1,
           "relativeToOriginalWindowSize": true,
           "rightEdgeAnchor": 2,
@@ -1857,98 +1867,6 @@
         "verticalTextAlignment": "top",
         "characterSize": 28,
         "color": "255;255;255"
-      }
-    },
-    {
-      "assetStoreId": "9be1b0d0d5a1afad4537db989ea5e3a4a4564dfd123630a9bf61330a73803c63",
-      "name": "ShadedDarkJoystick",
-      "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "bottomEdgeAnchor": 2,
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "leftEdgeAnchor": 4,
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 4,
-          "topEdgeAnchor": 0,
-          "useLegacyBottomAndRightAnchors": false
-        }
-      ],
-      "content": {},
-      "childrenContent": {
-        "Border": {
-          "adaptCollisionMaskAutomatically": false,
-          "updateIfNotVisible": false,
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Shaded dark joystick border.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "Thumb": {
-          "adaptCollisionMaskAutomatically": false,
-          "updateIfNotVisible": false,
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Shaded dark joystick thumb.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
       }
     },
     {
@@ -2356,6 +2274,98 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "9be1b0d0d5a1afad4537db989ea5e3a4a4564dfd123630a9bf61330a73803c63",
+      "name": "ShadedDarkJoystick",
+      "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "bottomEdgeAnchor": 2,
+          "leftEdgeAnchor": 0,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 4,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
+      "content": {},
+      "childrenContent": {
+        "Border": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Shaded dark joystick border.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "Thumb": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Shaded dark joystick thumb.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -4484,262 +4494,6 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
-                  },
-                  "parameters": [
-                    "ShadedDarkJoystick",
-                    "\"Up\"",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Up\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
-                  },
-                  "parameters": [
-                    "ShadedDarkJoystick",
-                    "\"Down\"",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Down\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
-                  },
-                  "parameters": [
-                    "ShadedDarkJoystick",
-                    "\"Left\"",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Left\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
-                  },
-                  "parameters": [
-                    "ShadedDarkJoystick",
-                    "\"Right\"",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Right\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
-                  },
-                  "parameters": [
-                    "ShadedDarkJoystick",
-                    "\"UpLeft\"",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Up\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Left\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
-                  },
-                  "parameters": [
-                    "ShadedDarkJoystick",
-                    "\"UpRight\"",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Up\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Right\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
-                  },
-                  "parameters": [
-                    "ShadedDarkJoystick",
-                    "\"DownLeft\"",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Down\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Left\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SpriteMultitouchJoystick::SpriteMultitouchJoystick::IsDirectionPushed8Way"
-                  },
-                  "parameters": [
-                    "ShadedDarkJoystick",
-                    "\"DownRight\"",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Down\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Right\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
                     "value": "KeyPressed"
                   },
                   "parameters": [
@@ -5202,6 +4956,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "TopDownMultitouchMapper",
+      "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
     },
     {
       "name": "Tween",

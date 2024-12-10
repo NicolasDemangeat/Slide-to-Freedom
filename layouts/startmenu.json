@@ -68,8 +68,8 @@
       "name": "TitleText",
       "persistentUuid": "9043308f-1359-4d6a-bee2-67e5eed6d72a",
       "width": 520,
-      "x": 120,
-      "y": 80,
+      "x": 112,
+      "y": 128,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -85,8 +85,8 @@
       "persistentUuid": "7fee6bc6-8ac3-4a76-a541-6adb61863427",
       "width": 416,
       "x": 160,
-      "y": 272,
-      "zOrder": 2,
+      "y": 288,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -102,7 +102,7 @@
       "persistentUuid": "23c81490-cdc7-4627-a9c7-f4c0da92f6de",
       "width": 416,
       "x": 160,
-      "y": 592,
+      "y": 598,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -119,7 +119,7 @@
       "persistentUuid": "1302e8c3-bac0-4626-860b-45609e13f2a9",
       "width": 416,
       "x": 160,
-      "y": 896,
+      "y": 886,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -136,7 +136,7 @@
       "persistentUuid": "e6c71aa9-580e-4a56-ac8e-1279cc6e739f",
       "width": 416,
       "x": 160,
-      "y": 432,
+      "y": 448,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -152,7 +152,7 @@
       "persistentUuid": "d51723db-e7ce-4fb0-9cd7-a77272cc2f99",
       "width": 0,
       "x": 1195,
-      "y": 256,
+      "y": 249,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -229,14 +229,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 928,
+      "height": 896,
       "keepRatio": true,
       "layer": "",
       "name": "container",
       "persistentUuid": "a3776897-f64b-4548-be5a-9ff4c8be843b",
       "width": 688,
       "x": 16,
-      "y": 80,
+      "y": 112,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -253,8 +253,8 @@
       "persistentUuid": "05e50ab4-ac40-44a2-a94b-be3e6e24c3ce",
       "width": 416,
       "x": 160,
-      "y": 272,
-      "zOrder": 1,
+      "y": 288,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -758,13 +758,13 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 0,
           "name": "Anchor",
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 0,
           "type": "AnchorBehavior::AnchorBehavior",
+          "leftEdgeAnchor": 0,
+          "rightEdgeAnchor": 0,
+          "topEdgeAnchor": 1,
+          "bottomEdgeAnchor": 4,
+          "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -807,13 +807,13 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 0,
-          "leftEdgeAnchor": 0,
           "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 0,
           "relativeToOriginalWindowSize": true,
           "rightEdgeAnchor": 0,
           "topEdgeAnchor": 0,
-          "type": "AnchorBehavior::AnchorBehavior",
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -1028,13 +1028,13 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 0,
           "leftEdgeAnchor": 0,
-          "name": "Anchor",
           "relativeToOriginalWindowSize": true,
           "rightEdgeAnchor": 0,
           "topEdgeAnchor": 0,
-          "type": "AnchorBehavior::AnchorBehavior",
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -1079,13 +1079,13 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 1,
-          "name": "Anchor",
           "relativeToOriginalWindowSize": true,
           "rightEdgeAnchor": 2,
           "topEdgeAnchor": 1,
-          "type": "AnchorBehavior::AnchorBehavior",
           "useLegacyBottomAndRightAnchors": false
         },
         {
@@ -1097,7 +1097,7 @@
           "JustifyContent": "space-evenly",
           "AlignItems": "center",
           "AlignContent": "normal",
-          "Gap": 150
+          "Gap": 50
         }
       ],
       "animations": [
