@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5843784410740985,
+    "zoomFactor": 0.5653158055126365,
     "windowMask": false
   },
   "objectsGroups": [
@@ -182,13 +182,12 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
+      "depth": 0.9999999999999998,
       "height": 80,
-      "keepRatio": true,
       "layer": "",
       "name": "avalanche",
       "persistentUuid": "890d2cff-73fe-42a5-9581-2973574b257b",
-      "width": 720,
+      "width": 1920,
       "x": 0,
       "y": 0,
       "zOrder": 550,
@@ -324,13 +323,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 640,
+      "height": 496,
       "layer": "ExplainPanel",
       "name": "ContentExplainText",
       "persistentUuid": "72ec807a-2e15-4206-bef3-f9a57ec075b7",
-      "width": 635,
-      "x": 37,
-      "y": 224,
+      "width": 603,
+      "x": 53,
+      "y": 256,
       "zOrder": 555,
       "numberProperties": [],
       "stringProperties": [],
@@ -1689,25 +1688,14 @@
       "effects": [],
       "behaviors": [
         {
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 4,
           "name": "Anchor",
+          "rightEdgeAnchor": 4,
+          "topEdgeAnchor": 4,
           "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 2,
-          "topEdgeAnchor": 1,
-          "leftEdgeAnchor": 1,
           "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 2,
           "useLegacyBottomAndRightAnchors": false
-        },
-        {
-          "name": "FlexContainer",
-          "type": "FlexBox::FlexContainer",
-          "ID": "PannelBackground",
-          "Direction": "down",
-          "Wrap": "nowrap",
-          "JustifyContent": "center",
-          "AlignItems": "center",
-          "AlignContent": "space-evenly",
-          "Gap": 30
         }
       ],
       "animations": [
@@ -1773,15 +1761,14 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "FlexItem",
-          "type": "FlexBox::FlexItem",
-          "ContainerID": "PannelBackground",
-          "Growth": 1,
-          "Shrink": 1,
-          "Order": 0,
-          "AlignSelf": "auto",
-          "FullWidth": false,
-          "FullHeight": false
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 1,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
         }
       ],
       "string": "It's time to reclaim your freedom...",
@@ -1827,15 +1814,14 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "FlexItem",
-          "type": "FlexBox::FlexItem",
-          "ContainerID": "PannelBackground",
-          "Growth": 1,
-          "Shrink": 1,
-          "Order": 1,
-          "AlignSelf": "auto",
-          "FullWidth": false,
-          "FullHeight": false
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 2,
+          "topEdgeAnchor": 4,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
         }
       ],
       "string": "You’ve finally made up your mind to leave… Leave for what? You don’t know, but you’re doing it anyway.\nIt has been snowing for weeks. You would have loved to take your sled, but it’s been broken since your last run...\nSo, skis it is.\n\nYou begin your descent, but after only a few minutes, a deep, thunderous rumble echoes behind you — an avalanche!\n\nHurry! Run! Run to finally be free…",
@@ -1883,15 +1869,14 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "FlexItem",
-          "type": "FlexBox::FlexItem",
-          "ContainerID": "PannelBackground",
-          "Growth": 1,
-          "Shrink": 1,
-          "Order": 2,
-          "AlignSelf": "auto",
-          "FullWidth": false,
-          "FullHeight": false
+          "bottomEdgeAnchor": 2,
+          "leftEdgeAnchor": 4,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 4,
+          "topEdgeAnchor": 4,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
         }
       ],
       "content": {
@@ -2229,6 +2214,16 @@
       "effects": [],
       "behaviors": [
         {
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 4,
+          "name": "Anchor",
+          "rightEdgeAnchor": 4,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "relativeToOriginalWindowSize": true,
+          "topEdgeAnchor": 4,
+          "useLegacyBottomAndRightAnchors": false
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -2283,13 +2278,13 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 2,
-          "leftEdgeAnchor": 0,
+          "leftEdgeAnchor": 4,
           "name": "Anchor",
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 0,
-          "topEdgeAnchor": 4,
+          "rightEdgeAnchor": 4,
           "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 2,
+          "relativeToOriginalWindowSize": true,
+          "topEdgeAnchor": 4,
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -4908,14 +4903,6 @@
     {
       "name": "Flash",
       "type": "Flash::Flash"
-    },
-    {
-      "name": "FlexContainer",
-      "type": "FlexBox::FlexContainer"
-    },
-    {
-      "name": "FlexItem",
-      "type": "FlexBox::FlexItem"
     },
     {
       "name": "Flippable",

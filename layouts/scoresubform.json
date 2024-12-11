@@ -45,9 +45,9 @@
       "layer": "",
       "name": "submissionText",
       "persistentUuid": "82c8d92b-7a28-434f-9110-b0d0ad972c85",
-      "width": 640,
-      "x": 32,
-      "y": 224,
+      "width": 544,
+      "x": 96,
+      "y": 192,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -75,12 +75,11 @@
       "customSize": true,
       "depth": 1,
       "height": 64,
-      "keepRatio": true,
       "layer": "",
       "name": "NameInput",
       "persistentUuid": "0d67a0a5-a72e-43d8-a4cb-80d14023f99c",
-      "width": 416,
-      "x": 96,
+      "width": 384,
+      "x": 128,
       "y": 640,
       "zOrder": 3,
       "numberProperties": [],
@@ -172,13 +171,13 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 0,
+          "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 4,
-          "relativeToOriginalWindowSize": true,
+          "name": "Anchor",
           "rightEdgeAnchor": 4,
           "topEdgeAnchor": 1,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -225,12 +224,12 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "bottomEdgeAnchor": 0,
+          "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 4,
-          "relativeToOriginalWindowSize": true,
+          "name": "Anchor",
           "rightEdgeAnchor": 4,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "relativeToOriginalWindowSize": true,
           "topEdgeAnchor": 1,
           "useLegacyBottomAndRightAnchors": false
         }
@@ -274,13 +273,13 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 4,
-          "relativeToOriginalWindowSize": true,
+          "name": "Anchor",
           "rightEdgeAnchor": 4,
           "topEdgeAnchor": 4,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -308,13 +307,13 @@
       "effects": [],
       "behaviors": [
         {
+          "leftEdgeAnchor": 4,
           "name": "Anchor",
+          "rightEdgeAnchor": 4,
+          "topEdgeAnchor": 4,
           "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 2,
-          "leftEdgeAnchor": 4,
           "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 4,
-          "topEdgeAnchor": 1,
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -450,13 +449,13 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 4,
-          "relativeToOriginalWindowSize": true,
+          "name": "Anchor",
           "rightEdgeAnchor": 4,
           "topEdgeAnchor": 4,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
         }
       ],
