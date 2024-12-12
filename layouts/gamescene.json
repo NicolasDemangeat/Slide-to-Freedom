@@ -1688,12 +1688,12 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 4,
-          "name": "Anchor",
           "rightEdgeAnchor": 4,
           "topEdgeAnchor": 4,
-          "type": "AnchorBehavior::AnchorBehavior",
           "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
         }
@@ -1761,13 +1761,13 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 4,
-          "leftEdgeAnchor": 1,
           "name": "Anchor",
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 2,
-          "topEdgeAnchor": 1,
           "type": "AnchorBehavior::AnchorBehavior",
+          "leftEdgeAnchor": 4,
+          "rightEdgeAnchor": 4,
+          "bottomEdgeAnchor": 4,
+          "relativeToOriginalWindowSize": true,
+          "topEdgeAnchor": 1,
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -1814,13 +1814,13 @@
       "effects": [],
       "behaviors": [
         {
-          "bottomEdgeAnchor": 4,
-          "leftEdgeAnchor": 1,
           "name": "Anchor",
-          "relativeToOriginalWindowSize": true,
-          "rightEdgeAnchor": 2,
-          "topEdgeAnchor": 4,
           "type": "AnchorBehavior::AnchorBehavior",
+          "leftEdgeAnchor": 4,
+          "rightEdgeAnchor": 4,
+          "bottomEdgeAnchor": 4,
+          "relativeToOriginalWindowSize": true,
+          "topEdgeAnchor": 4,
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -1869,13 +1869,13 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 2,
           "leftEdgeAnchor": 4,
-          "name": "Anchor",
           "relativeToOriginalWindowSize": true,
           "rightEdgeAnchor": 4,
           "topEdgeAnchor": 4,
-          "type": "AnchorBehavior::AnchorBehavior",
           "useLegacyBottomAndRightAnchors": false
         }
       ],
@@ -2214,11 +2214,11 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 4,
-          "name": "Anchor",
           "rightEdgeAnchor": 4,
-          "type": "AnchorBehavior::AnchorBehavior",
           "relativeToOriginalWindowSize": true,
           "topEdgeAnchor": 4,
           "useLegacyBottomAndRightAnchors": false
@@ -2278,10 +2278,10 @@
       "effects": [],
       "behaviors": [
         {
-          "leftEdgeAnchor": 4,
           "name": "Anchor",
-          "rightEdgeAnchor": 4,
           "type": "AnchorBehavior::AnchorBehavior",
+          "leftEdgeAnchor": 4,
+          "rightEdgeAnchor": 4,
           "bottomEdgeAnchor": 2,
           "relativeToOriginalWindowSize": true,
           "topEdgeAnchor": 4,
@@ -2501,17 +2501,6 @@
             "BonusScore",
             "=",
             "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "2.8",
-            "",
-            ""
           ]
         },
         {
@@ -3342,6 +3331,17 @@
             "=",
             "avalanche.CenterY()+32"
           ]
+        },
+        {
+          "type": {
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "2.8",
+            "",
+            ""
+          ]
         }
       ],
       "events": [
@@ -3383,6 +3383,20 @@
                 "",
                 "=",
                 "lerp(CameraCenterX(), Player.X(), 0.05)",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ClampCamera"
+              },
+              "parameters": [
+                "",
+                "0",
+                "0",
+                "SceneWindowWidth()",
+                "CameraBorderBottom()",
                 "",
                 ""
               ]

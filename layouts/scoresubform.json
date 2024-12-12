@@ -171,12 +171,12 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 4,
-          "name": "Anchor",
           "rightEdgeAnchor": 4,
           "topEdgeAnchor": 1,
-          "type": "AnchorBehavior::AnchorBehavior",
           "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
         }
@@ -224,11 +224,11 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 4,
-          "name": "Anchor",
           "rightEdgeAnchor": 4,
-          "type": "AnchorBehavior::AnchorBehavior",
           "relativeToOriginalWindowSize": true,
           "topEdgeAnchor": 1,
           "useLegacyBottomAndRightAnchors": false
@@ -273,12 +273,12 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 4,
-          "name": "Anchor",
           "rightEdgeAnchor": 4,
           "topEdgeAnchor": 4,
-          "type": "AnchorBehavior::AnchorBehavior",
           "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
         }
@@ -307,11 +307,11 @@
       "effects": [],
       "behaviors": [
         {
-          "leftEdgeAnchor": 4,
           "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
+          "leftEdgeAnchor": 4,
           "rightEdgeAnchor": 4,
           "topEdgeAnchor": 4,
-          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 2,
           "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
@@ -449,12 +449,12 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
           "bottomEdgeAnchor": 4,
           "leftEdgeAnchor": 4,
-          "name": "Anchor",
           "rightEdgeAnchor": 4,
           "topEdgeAnchor": 4,
-          "type": "AnchorBehavior::AnchorBehavior",
           "relativeToOriginalWindowSize": true,
           "useLegacyBottomAndRightAnchors": false
         }
@@ -756,26 +756,6 @@
           "comment": "Camera Management"
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "ClampCamera"
-              },
-              "parameters": [
-                "",
-                "0",
-                "0",
-                "720",
-                "ScreenHeight()",
-                "",
-                ""
-              ]
-            }
-          ]
-        },
-        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -905,6 +885,26 @@
                 "\"Congrats!\""
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ClampCamera"
+          },
+          "parameters": [
+            "",
+            "0",
+            "0",
+            "720",
+            "ScreenHeight()",
+            "",
+            ""
           ]
         }
       ]
