@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5653158055126365,
+    "zoomFactor": 0.8416428125373195,
     "windowMask": false
   },
   "objectsGroups": [
@@ -187,7 +187,7 @@
       "layer": "",
       "name": "avalanche",
       "persistentUuid": "890d2cff-73fe-42a5-9581-2973574b257b",
-      "width": 1920,
+      "width": 720,
       "x": 0,
       "y": 0,
       "zOrder": 550,
@@ -206,7 +206,7 @@
       "width": 0,
       "x": 16,
       "y": 64,
-      "zOrder": 3,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [
         {
@@ -631,12 +631,44 @@
       "height": 0,
       "keepRatio": true,
       "layer": "UI",
-      "name": "ShadedDarkJoystick",
-      "persistentUuid": "1fb5c0c4-ffea-4f2e-9e8e-987e43ff1d6a",
+      "name": "LeftArrowButton",
+      "persistentUuid": "b052a8de-e8bd-45e0-aaf4-db63eeb19de1",
       "width": 0,
-      "x": 384,
-      "y": 944,
-      "zOrder": 4002,
+      "x": 448,
+      "y": 912,
+      "zOrder": 4003,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "RightArrowButton",
+      "persistentUuid": "710e883a-f4c5-44d0-9b4a-400ca90c77d1",
+      "width": 0,
+      "x": 576,
+      "y": 912,
+      "zOrder": 4004,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "BottomArrowButton",
+      "persistentUuid": "a3a9d51d-3568-4449-9837-66783f9a79bf",
+      "width": 0,
+      "x": 48,
+      "y": 912,
+      "zOrder": 4005,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -717,9 +749,10 @@
           "Property": 2.143215748974e-312
         },
         {
-          "isFolded": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "deceleration": 1200,
+          "ignoreDefaultControls": true,
           "acceleration": 500,
           "maxSpeed": 150,
           "rotateObject": false,
@@ -727,12 +760,11 @@
           "angleOffset": 0,
           "angularMaxSpeed": 180,
           "customIsometryAngle": 30,
-          "deceleration": 800,
-          "ignoreDefaultControls": false,
           "movementAngleOffset": 0,
           "viewpoint": "TopDown"
         },
         {
+          "isFolded": true,
           "name": "TopDownMultitouchMapper",
           "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
           "TopDownMovement": "TopDownMovement",
@@ -2271,96 +2303,184 @@
       "behaviors": []
     },
     {
-      "assetStoreId": "9be1b0d0d5a1afad4537db989ea5e3a4a4564dfd123630a9bf61330a73803c63",
-      "name": "ShadedDarkJoystick",
-      "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "5b15807864fa4e31a41e1e85600b000f73802cc39dbe61e3048a0bcc3930ae0e",
+      "name": "LeftArrowButton",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
+      "behaviors": [],
+      "animations": [
         {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior",
-          "leftEdgeAnchor": 4,
-          "rightEdgeAnchor": 4,
-          "bottomEdgeAnchor": 2,
-          "relativeToOriginalWindowSize": true,
-          "topEdgeAnchor": 4,
-          "useLegacyBottomAndRightAnchors": false
-        }
-      ],
-      "content": {},
-      "childrenContent": {
-        "Border": {
-          "adaptCollisionMaskAutomatically": false,
-          "updateIfNotVisible": false,
-          "animations": [
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
             {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Shaded dark joystick border.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
+                  "hasCustomCollisionMask": true,
+                  "image": "Left arrow button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
                         "x": 0,
                         "y": 0
                       },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
+                      {
+                        "x": 80,
                         "y": 0
                       },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        "Thumb": {
-          "adaptCollisionMaskAutomatically": false,
-          "updateIfNotVisible": false,
-          "animations": [
-            {
-              "name": "Idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Shaded dark joystick thumb.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
+                      {
+                        "x": 80,
+                        "y": 80
                       },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
+                      {
                         "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
+                        "y": 80
+                      }
+                    ]
                   ]
                 }
               ]
             }
           ]
         }
-      }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "0236c9d3f392e7c67c24858c9725a423057a0586e6569a46cdb60f9ac2cf3c88",
+      "name": "RightArrowButton",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Right arrow button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 80,
+                        "y": 0
+                      },
+                      {
+                        "x": 80,
+                        "y": 80
+                      },
+                      {
+                        "x": 0,
+                        "y": 80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "9876fc0b759a2660d9962fd74d03fac3dab44094520ad307f0944a5a0c2e0b10",
+      "name": "BottomArrowButton",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bottom arrow button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 80,
+                        "y": 0
+                      },
+                      {
+                        "x": 80,
+                        "y": 80
+                      },
+                      {
+                        "x": 0,
+                        "y": 80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2403,7 +2523,13 @@
         "folderName": "UI",
         "children": [
           {
-            "objectName": "ShadedDarkJoystick"
+            "objectName": "BottomArrowButton"
+          },
+          {
+            "objectName": "RightArrowButton"
+          },
+          {
+            "objectName": "LeftArrowButton"
           },
           {
             "objectName": "ScoreValue"
@@ -2588,7 +2714,7 @@
           "parameters": [
             "",
             "Avalanche2",
-            "avalanche.CenterX()+50",
+            "avalanche.CenterX()+200",
             "avalanche.CenterY()",
             ""
           ]
@@ -2621,7 +2747,7 @@
           "parameters": [
             "",
             "Avalanche3",
-            "avalanche.CenterX()+50",
+            "avalanche.CenterX()+300",
             "avalanche.CenterY()",
             ""
           ]
@@ -2727,6 +2853,7 @@
       ],
       "events": [
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2745,7 +2872,23 @@
                 "value": "Cache"
               },
               "parameters": [
-                "ShadedDarkJoystick"
+                "RightArrowButton"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "LeftArrowButton"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "BottomArrowButton"
               ]
             }
           ]
@@ -3303,7 +3446,7 @@
           "parameters": [
             "Avalanche",
             "=",
-            "avalanche.CenterX()+40",
+            "avalanche.CenterX()+50",
             "=",
             "avalanche.CenterY()+32"
           ]
@@ -3315,7 +3458,7 @@
           "parameters": [
             "Avalanche2",
             "=",
-            "avalanche.CenterX()+125",
+            "avalanche.CenterX()+160",
             "=",
             "avalanche.CenterY()+32"
           ]
@@ -3327,7 +3470,7 @@
           "parameters": [
             "Avalanche3",
             "=",
-            "avalanche.CenterX()+200",
+            "avalanche.CenterX()+260",
             "=",
             "avalanche.CenterY()+32"
           ]
@@ -3338,7 +3481,7 @@
           },
           "parameters": [
             "",
-            "2.8",
+            "2.3",
             "",
             ""
           ]
@@ -4496,44 +4639,46 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "JOYSTICK MANAGEMENT\n"
+              "comment": "Key Binding"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyPressed"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "",
-                    "z"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Up\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "q"
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "q"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "LeftArrowButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ],
@@ -4555,11 +4700,39 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyPressed"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "",
-                    "s"
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "s"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Down"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "BottomArrowButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ],
@@ -4581,11 +4754,39 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyPressed"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "",
-                    "d"
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "d"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Right"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "RightArrowButton",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ],
@@ -4598,186 +4799,6 @@
                     "Player",
                     "TopDownMovement",
                     "\"Right\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "z"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "d"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Up\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Right\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "z"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "q"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Up\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Left\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "s"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "d"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Down\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Right\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "s"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "q"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Down\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TopDownMovementBehavior::SimulateControl"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Left\""
                   ]
                 }
               ]

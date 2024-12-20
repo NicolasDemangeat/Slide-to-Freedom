@@ -203,7 +203,7 @@
         "metadata": "",
         "name": "click1.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -213,7 +213,7 @@
         "metadata": "",
         "name": "f5d3ffae911b06f5a36cc912f77f25acdd0a6e0e2fad464b2a524ec3064881f2_Click_03.aac",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false,
         "origin": {
@@ -227,7 +227,7 @@
         "metadata": "",
         "name": "candelabra.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -277,7 +277,7 @@
         "metadata": "",
         "name": "298035dbd6de9b4fc221a51f1723023e4387a92380f286b572903c486838460d_Piano Magic Motive.aac",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false,
         "origin": {
@@ -291,7 +291,7 @@
         "metadata": "",
         "name": "751052bbd3de6938713ebbe8782cc3f6feba91f9e3caf27272335ac4e549c0cd_Complete_02.aac",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false,
         "origin": {
@@ -393,7 +393,7 @@
         "metadata": "",
         "name": "impactMetal_heavy_004.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -403,7 +403,7 @@
         "metadata": "",
         "name": "impactMetal_heavy_001.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -413,7 +413,7 @@
         "metadata": "",
         "name": "hit.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -423,7 +423,7 @@
         "metadata": "",
         "name": "jump.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -433,7 +433,7 @@
         "metadata": "",
         "name": "Lyric & Peaceful Space.wav",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -443,7 +443,7 @@
         "metadata": "",
         "name": "bookFlip2.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -469,7 +469,7 @@
         "metadata": "",
         "name": "popo.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -480,6 +480,42 @@
         "name": "Popi2.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Left arrow button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Left arrow button.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Flat Dark/69b5c8f8989a271fbbe9d2f68763f7e820044f505b0d0b66874bd20f70935a3c_Left arrow button.png",
+          "name": "Left arrow button.png"
+        }
+      },
+      {
+        "file": "assets/Right arrow button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Right arrow button.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Flat Dark/cb2f532a9cd3feb7cb8af6cdcb1de5ec074dc6aacf5c851dcd243c407aedd605_Right arrow button.png",
+          "name": "Right arrow button.png"
+        }
+      },
+      {
+        "file": "assets/Bottom arrow button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bottom arrow button.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Flat Dark/b85e77600f6f97292b3980a025303a4ece93102f73f0d3dc3cf25b146e79d380_Bottom arrow button.png",
+          "name": "Bottom arrow button.png"
+        }
       }
     ],
     "resourceFolders": []
