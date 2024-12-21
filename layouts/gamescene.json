@@ -627,13 +627,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
       "keepRatio": true,
       "layer": "UI",
       "name": "LeftArrowButton",
       "persistentUuid": "b052a8de-e8bd-45e0-aaf4-db63eeb19de1",
-      "width": 0,
+      "width": 96,
       "x": 448,
       "y": 912,
       "zOrder": 4003,
@@ -643,13 +644,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
       "keepRatio": true,
       "layer": "UI",
       "name": "RightArrowButton",
       "persistentUuid": "710e883a-f4c5-44d0-9b4a-400ca90c77d1",
-      "width": 0,
+      "width": 96,
       "x": 576,
       "y": 912,
       "zOrder": 4004,
@@ -659,13 +661,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
       "keepRatio": true,
       "layer": "UI",
       "name": "BottomArrowButton",
       "persistentUuid": "a3a9d51d-3568-4449-9837-66783f9a79bf",
-      "width": 0,
+      "width": 96,
       "x": 48,
       "y": 912,
       "zOrder": 4005,
@@ -4641,12 +4644,30 @@
                     },
                     {
                       "type": {
-                        "value": "ButtonStates::ButtonFSM::IsPressed"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        "LeftArrowButton",
-                        "ButtonFSM",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "LeftArrowButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MouseButtonPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -4747,12 +4768,30 @@
                     },
                     {
                       "type": {
-                        "value": "ButtonStates::ButtonFSM::IsPressed"
+                        "value": "BuiltinCommonInstructions::And"
                       },
-                      "parameters": [
-                        "RightArrowButton",
-                        "ButtonFSM",
-                        ""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "SourisSurObjet"
+                          },
+                          "parameters": [
+                            "RightArrowButton",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MouseButtonPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ]
+                        }
                       ]
                     }
                   ]
