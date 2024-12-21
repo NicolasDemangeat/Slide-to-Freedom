@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8416428125373195,
+    "zoomFactor": 0.7130377630690476,
     "windowMask": false
   },
   "objectsGroups": [
@@ -721,12 +721,12 @@
             {
               "name": "maxSpeed",
               "type": "number",
-              "value": 125
+              "value": 110
             },
             {
               "name": "offset",
               "type": "number",
-              "value": 4
+              "value": 3
             }
           ]
         }
@@ -1204,7 +1204,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite5",
+                  "image": "NewSprite2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1229,11 +1229,11 @@
                       },
                       {
                         "x": 16,
-                        "y": 32
+                        "y": 16
                       },
                       {
                         "x": 0,
-                        "y": 32
+                        "y": 16
                       }
                     ]
                   ]
@@ -2310,7 +2310,18 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -2370,7 +2381,18 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -2430,7 +2452,18 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -3481,7 +3514,7 @@
           },
           "parameters": [
             "",
-            "2.3",
+            "2.1",
             "",
             ""
           ]
@@ -3596,7 +3629,7 @@
               "parameters": [
                 "Player",
                 ">",
-                "BottomChecker.Y() - 1280"
+                "BottomChecker.Y() - 1279"
               ]
             },
             {
@@ -3624,7 +3657,7 @@
               "parameters": [
                 "Random",
                 "=",
-                "RandomInRange(1,3)"
+                "RandomInRange(1,4)"
               ]
             },
             {
@@ -3644,16 +3677,6 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Random",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
                     "inverted": true,
                     "value": "NumberVariable"
                   },
@@ -3671,105 +3694,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Layout1\"",
-                    "BottomChecker.X()",
-                    "BottomChecker.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "BottomChecker",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Random",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "LayoutRenderingCount",
-                    "=",
-                    "LayoutRenderingMax"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Layout2\"",
-                    "BottomChecker.X()",
-                    "BottomChecker.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "BottomChecker",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "Random",
-                    "=",
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "LayoutRenderingCount",
-                    "=",
-                    "LayoutRenderingMax"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Layout3\"",
+                    "\"Layout\"+Random",
                     "BottomChecker.X()",
                     "BottomChecker.Y()",
                     ""
@@ -4096,7 +4021,18 @@
                   "parameters": [
                     "BonusScore",
                     "-",
-                    "10"
+                    "RandomInRange(10,15)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "Player",
+                    "0",
+                    "2",
+                    "1"
                   ]
                 }
               ],
@@ -4220,6 +4156,25 @@
               "actions": [
                 {
                   "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "Player"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "Player",
+                    "0",
+                    "50",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "TopDownMovementBehavior::Acceleration"
                   },
                   "parameters": [
@@ -4306,7 +4261,7 @@
                       "parameters": [
                         "BonusScore",
                         "+",
-                        "15"
+                        "RandomInRange(10,20)"
                       ]
                     },
                     {
@@ -4606,12 +4561,28 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "TopDownMovementBehavior::TopDownMovementBehavior::IsUsingControl"
+                    "value": "BuiltinCommonInstructions::Or"
                   },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "\"Up\""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Up"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "z"
+                      ]
+                    }
                   ]
                 }
               ],
@@ -4670,12 +4641,11 @@
                     },
                     {
                       "type": {
-                        "value": "SourisSurObjet"
+                        "value": "ButtonStates::ButtonFSM::IsPressed"
                       },
                       "parameters": [
                         "LeftArrowButton",
-                        "",
-                        "",
+                        "ButtonFSM",
                         ""
                       ]
                     }
@@ -4724,12 +4694,11 @@
                     },
                     {
                       "type": {
-                        "value": "SourisSurObjet"
+                        "value": "ButtonStates::ButtonFSM::IsPressed"
                       },
                       "parameters": [
                         "BottomArrowButton",
-                        "",
-                        "",
+                        "ButtonFSM",
                         ""
                       ]
                     }
@@ -4778,12 +4747,11 @@
                     },
                     {
                       "type": {
-                        "value": "SourisSurObjet"
+                        "value": "ButtonStates::ButtonFSM::IsPressed"
                       },
                       "parameters": [
                         "RightArrowButton",
-                        "",
-                        "",
+                        "ButtonFSM",
                         ""
                       ]
                     }
@@ -4930,6 +4898,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
     },
     {
       "name": "Effect",
