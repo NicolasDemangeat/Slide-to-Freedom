@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7130377630690476,
+    "zoomFactor": 0.8416428125373199,
     "windowMask": false
   },
   "objectsGroups": [
@@ -629,14 +629,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 96,
+      "height": 112,
       "keepRatio": true,
       "layer": "UI",
       "name": "LeftArrowButton",
       "persistentUuid": "b052a8de-e8bd-45e0-aaf4-db63eeb19de1",
-      "width": 96,
+      "width": 112,
       "x": 448,
-      "y": 912,
+      "y": 928,
       "zOrder": 4003,
       "numberProperties": [],
       "stringProperties": [],
@@ -646,14 +646,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 96,
+      "height": 112,
       "keepRatio": true,
       "layer": "UI",
       "name": "RightArrowButton",
       "persistentUuid": "710e883a-f4c5-44d0-9b4a-400ca90c77d1",
-      "width": 96,
+      "width": 112,
       "x": 576,
-      "y": 912,
+      "y": 928,
       "zOrder": 4004,
       "numberProperties": [],
       "stringProperties": [],
@@ -663,14 +663,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 96,
+      "height": 112,
       "keepRatio": true,
       "layer": "UI",
       "name": "BottomArrowButton",
       "persistentUuid": "a3a9d51d-3568-4449-9837-66783f9a79bf",
-      "width": 96,
+      "width": 112,
       "x": 48,
-      "y": 912,
+      "y": 928,
       "zOrder": 4005,
       "numberProperties": [],
       "stringProperties": [],
@@ -702,7 +702,7 @@
         "rowCount": 11,
         "columnCount": 12,
         "tileSize": 16,
-        "tilesWithHitBox": "19,22,23,11,10,34,35,30,69,81,80,79,78,47,1,4,12,24,37,50,51,40,29,17,15,28,14,25,60,72,73,61,64,65,77,76,31,18,66"
+        "tilesWithHitBox": "19,22,23,11,10,34,35,30,69,81,80,79,78,47,1,4,12,24,37,50,51,40,29,17,15,28,14,25,60,72,73,61,64,65,77,76,31,18,66,32,33,20,21,8,9"
       }
     },
     {
@@ -752,11 +752,11 @@
           "Property": 2.143215748974e-312
         },
         {
+          "acceleration": 900,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "deceleration": 1200,
           "ignoreDefaultControls": true,
-          "acceleration": 500,
           "maxSpeed": 150,
           "rotateObject": false,
           "allowDiagonals": true,
@@ -2517,6 +2517,73 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "PlayerShadow",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": true,
+          "IsDestroyedWithParent": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "tile_0095.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 5
+                      },
+                      {
+                        "x": 12,
+                        "y": 5
+                      },
+                      {
+                        "x": 12,
+                        "y": 11
+                      },
+                      {
+                        "x": 4,
+                        "y": 11
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2616,6 +2683,9 @@
       },
       {
         "objectName": "Finished"
+      },
+      {
+        "objectName": "PlayerShadow"
       }
     ]
   },
@@ -2889,7 +2959,6 @@
       ],
       "events": [
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3521,6 +3590,14 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "BottomChecker"
+          ]
         }
       ],
       "events": [
@@ -3632,7 +3709,7 @@
               "parameters": [
                 "Player",
                 ">",
-                "BottomChecker.Y() - 1279"
+                "BottomChecker.Y() - 1280"
               ]
             },
             {
@@ -3660,7 +3737,7 @@
               "parameters": [
                 "Random",
                 "=",
-                "RandomInRange(1,4)"
+                "RandomInRange(1,5)"
               ]
             },
             {
@@ -3981,6 +4058,39 @@
                 },
                 {
                   "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "PlayerShadow",
+                    "Player.X()",
+                    "Player.Y()+24",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "PlayerShadow",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Sticker::Sticker::Stick"
+                  },
+                  "parameters": [
+                    "PlayerShadow",
+                    "Sticker",
+                    "Player",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::TweenBehavior::AddObjectScaleTween3"
                   },
                   "parameters": [
@@ -3989,7 +4099,7 @@
                     "\"Player\"",
                     "1.5",
                     "\"bounce\"",
-                    "0.3",
+                    "0.35",
                     "3",
                     "yes"
                   ]
@@ -3999,7 +4109,7 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "0.1"
+                    "0.125"
                   ]
                 },
                 {
@@ -4012,9 +4122,18 @@
                     "\"Player\"",
                     "1",
                     "\"bounce\"",
-                    "0.5",
+                    "0.3",
                     "3",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "PlayerShadow",
+                    ""
                   ]
                 },
                 {
@@ -4423,15 +4542,28 @@
                     "=",
                     "1"
                   ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
                 },
                 {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"ScoreSubForm\"",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"ScoreSubForm\"",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
