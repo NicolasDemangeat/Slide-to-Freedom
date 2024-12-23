@@ -993,6 +993,16 @@
             },
             {
               "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "LayoutRenderingMax",
+                "=",
+                "10"
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -1014,6 +1024,14 @@
             },
             {
               "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
                 "value": "Leaderboards::SavePlayerScore"
               },
               "parameters": [
@@ -1030,6 +1048,154 @@
               "parameters": [
                 "",
                 "\"0f1e3941-6590-40b8-83cf-bf7099b1a794\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "submitScoreButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "LayoutRenderingMax",
+                "=",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "751052bbd3de6938713ebbe8782cc3f6feba91f9e3caf27272335ac4e549c0cd_Complete_02.aac",
+                "2",
+                "",
+                "50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Leaderboards::SavePlayerScore"
+              },
+              "parameters": [
+                "",
+                "\"8e4e6d2f-33da-40fc-bdc4-8b62212af1ea\"",
+                "Score",
+                "NameInput.Text::Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Leaderboards::DisplayLeaderboard"
+              },
+              "parameters": [
+                "",
+                "\"8e4e6d2f-33da-40fc-bdc4-8b62212af1ea\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "submitScoreButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "LayoutRenderingMax",
+                "=",
+                "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "751052bbd3de6938713ebbe8782cc3f6feba91f9e3caf27272335ac4e549c0cd_Complete_02.aac",
+                "2",
+                "",
+                "50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Leaderboards::SavePlayerScore"
+              },
+              "parameters": [
+                "",
+                "\"0238683a-30d4-4636-9e9a-676e56e5bf40\"",
+                "Score",
+                "NameInput.Text::Value()"
+              ]
+            },
+            {
+              "type": {
+                "value": "Leaderboards::DisplayLeaderboard"
+              },
+              "parameters": [
+                "",
+                "\"0238683a-30d4-4636-9e9a-676e56e5bf40\"",
                 "yes"
               ]
             }

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5653158055126315,
+    "zoomFactor": 0.6040838749988875,
     "windowMask": true
   },
   "objectsGroups": [
@@ -136,7 +136,7 @@
       "persistentUuid": "e6c71aa9-580e-4a56-ac8e-1279cc6e739f",
       "width": 416,
       "x": 160,
-      "y": 432,
+      "y": 438,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -221,6 +221,159 @@
       "x": 220,
       "y": 127,
       "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "DurationSelection",
+      "name": "ShortRunButton",
+      "persistentUuid": "5ffcca4f-8ea5-4de5-9022-1677a581739d",
+      "width": 416,
+      "x": 160,
+      "y": 240,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "DurationSelection",
+      "name": "MediumRunButton",
+      "persistentUuid": "794bcd52-6774-4602-a463-b5379b3cceac",
+      "width": 416,
+      "x": 160,
+      "y": 374,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "DurationSelection",
+      "name": "LongRunButton",
+      "persistentUuid": "a34b07f5-6e73-48d0-8d1e-ba89be843b54",
+      "width": 416,
+      "x": 160,
+      "y": 512,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "DurationSelection",
+      "name": "EndlessButton",
+      "persistentUuid": "06a5bb20-9822-4de4-bb15-26c624626f80",
+      "width": 416,
+      "x": 160,
+      "y": 640,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "DurationSelection",
+      "name": "BackButton",
+      "persistentUuid": "618f2b56-5d3c-4e69-b206-df12f00c06e0",
+      "width": 416,
+      "x": 160,
+      "y": 832,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "LeaderBoardSelection",
+      "name": "MediumRunButton",
+      "persistentUuid": "2d0a7c35-0e72-4450-9f77-ec32ee46ecee",
+      "width": 416,
+      "x": 160,
+      "y": 368,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "LeaderBoardSelection",
+      "name": "LongRunButton",
+      "persistentUuid": "a4c33aa2-3702-4f5f-b5f3-6eb7355c11ec",
+      "width": 416,
+      "x": 160,
+      "y": 512,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "LeaderBoardSelection",
+      "name": "ShortRunButton",
+      "persistentUuid": "3bfc1ee0-9e14-405b-9eda-e190fa493ba3",
+      "width": 416,
+      "x": 160,
+      "y": 240,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "LeaderBoardSelection",
+      "name": "BackButton",
+      "persistentUuid": "6d8495f8-af2f-4140-81fd-a20a312ec15e",
+      "width": 416,
+      "x": 160,
+      "y": 832,
+      "zOrder": 19,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1029,6 +1182,386 @@
         "characterSize": 60,
         "color": "255;255;255"
       }
+    },
+    {
+      "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+      "name": "ShortRunButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 4,
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 4,
+          "topEdgeAnchor": 1,
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": true,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "SHORT RUN",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 45,
+          "color": {
+            "b": 79,
+            "g": 72,
+            "r": 72
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "SHORT RUN",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 45,
+            "color": "72;72;79"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+      "name": "MediumRunButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 4,
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 4,
+          "topEdgeAnchor": 1,
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": true,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "MEDIUM RUN",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 45,
+          "color": {
+            "b": 79,
+            "g": 72,
+            "r": 72
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "MEDIUM RUN",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 45,
+            "color": "72;72;79"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+      "name": "LongRunButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 4,
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 4,
+          "topEdgeAnchor": 1,
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": true,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "LONG RUN",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 45,
+          "color": {
+            "b": 79,
+            "g": 72,
+            "r": 72
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "LONG RUN",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 45,
+            "color": "72;72;79"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
+    },
+    {
+      "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+      "name": "EndlessButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior",
+          "bottomEdgeAnchor": 4,
+          "leftEdgeAnchor": 4,
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 4,
+          "topEdgeAnchor": 1,
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 10,
+        "BottomPadding": 32,
+        "TopPadding": 16,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Idle": {
+          "bottomMargin": 32,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 256
+        },
+        "Label": {
+          "bold": true,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "ENDLESS",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 45,
+          "color": {
+            "b": 79,
+            "g": 72,
+            "r": 72
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "ENDLESS",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 45,
+            "color": "72;72;79"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 106,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Grey Button_Pressed.png",
+          "tiled": true,
+          "topMargin": 32,
+          "width": 256
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1047,10 +1580,22 @@
         "objectName": "StartGameButton"
       },
       {
+        "objectName": "ShortRunButton"
+      },
+      {
         "objectName": "LeaderboardButton"
       },
       {
+        "objectName": "MediumRunButton"
+      },
+      {
         "objectName": "CreditButton"
+      },
+      {
+        "objectName": "LongRunButton"
+      },
+      {
+        "objectName": "EndlessButton"
       },
       {
         "objectName": "QuitGameButton"
@@ -1099,6 +1644,24 @@
           "parameters": [
             "",
             "\"Credit\""
+          ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"DurationSelection\""
+          ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"LeaderBoardSelection\""
           ]
         }
       ],
@@ -1206,6 +1769,30 @@
                 "360",
                 "-360",
                 "\"Credit\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Snow",
+                "360",
+                "-360",
+                "\"DurationSelection\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Snow",
+                "360",
+                "-360",
+                "\"LeaderBoardSelection\""
               ]
             },
             {
@@ -1354,12 +1941,42 @@
           "actions": [
             {
               "type": {
-                "value": "Scene"
+                "value": "Tween::TweenCameraPosition2"
               },
               "parameters": [
                 "",
-                "\"GameScene\"",
+                "\"cameraTween\"",
+                "MenuMarker.CenterX()",
+                "CameraCenterY()",
+                "",
+                "\"easeFrom\"",
+                "0.4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"DurationSelection\""
               ]
             }
           ]
@@ -1386,12 +2003,42 @@
           "actions": [
             {
               "type": {
-                "value": "Leaderboards::DisplayLeaderboard"
+                "value": "Tween::TweenCameraPosition2"
               },
               "parameters": [
                 "",
-                "\"0f1e3941-6590-40b8-83cf-bf7099b1a794\"",
-                "yes"
+                "\"cameraTween\"",
+                "MenuMarker.CenterX()",
+                "CameraCenterY()",
+                "",
+                "\"easeFrom\"",
+                "0.4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"LeaderBoardSelection\""
               ]
             }
           ]
@@ -1435,7 +2082,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "0.3"
+                "0.25"
               ]
             },
             {
@@ -1506,7 +2153,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "0.3"
+                "0.25"
               ]
             },
             {
@@ -1516,6 +2163,148 @@
               "parameters": [
                 "",
                 "\"Credit\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BackButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"DurationSelection\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenCameraPosition2"
+              },
+              "parameters": [
+                "",
+                "\"cameraTween\"",
+                "MenuMarker.CenterX()",
+                "CameraCenterY()",
+                "",
+                "\"easeFrom\"",
+                "0.4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"DurationSelection\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BackButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"LeaderBoardSelection\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenCameraPosition2"
+              },
+              "parameters": [
+                "",
+                "\"cameraTween\"",
+                "MenuMarker.CenterX()",
+                "CameraCenterY()",
+                "",
+                "\"easeFrom\"",
+                "0.4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"LeaderBoardSelection\""
               ]
             },
             {
@@ -1553,6 +2342,16 @@
             },
             {
               "type": {
+                "inverted": true,
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"DurationSelection\""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -1565,6 +2364,371 @@
               },
               "parameters": [
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Duration run management"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ShortRunButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"DurationSelection\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LayoutRenderingMax",
+                "=",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"GameScene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MediumRunButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"DurationSelection\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LayoutRenderingMax",
+                "=",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"GameScene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "LongRunButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"DurationSelection\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LayoutRenderingMax",
+                "=",
+                "30"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"GameScene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "EndlessButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"DurationSelection\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LayoutRenderingMax",
+                "=",
+                "100000"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"GameScene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "LeaderBoard Selection"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ShortRunButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"LeaderBoardSelection\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Leaderboards::DisplayLeaderboard"
+              },
+              "parameters": [
+                "",
+                "\"0f1e3941-6590-40b8-83cf-bf7099b1a794\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "MediumRunButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"LeaderBoardSelection\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Leaderboards::DisplayLeaderboard"
+              },
+              "parameters": [
+                "",
+                "\"8e4e6d2f-33da-40fc-bdc4-8b62212af1ea\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "LongRunButton",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"LeaderBoardSelection\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.25"
+              ]
+            },
+            {
+              "type": {
+                "value": "Leaderboards::DisplayLeaderboard"
+              },
+              "parameters": [
+                "",
+                "\"0238683a-30d4-4636-9e9a-676e56e5bf40\"",
+                "yes"
               ]
             }
           ]
@@ -1667,6 +2831,442 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Layer management",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "MediumRunButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "LongRunButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "EndlessButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "BackButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "ShortRunButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StartGameButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "LeaderboardButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "CreditButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "QuitGameButton",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"DurationSelection\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StartGameButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "LeaderboardButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "CreditButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "QuitGameButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "MediumRunButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "LongRunButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "EndlessButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "BackButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "ShortRunButton",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"LeaderBoardSelection\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StartGameButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "LeaderboardButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "CreditButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "QuitGameButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "MediumRunButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "LongRunButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "EndlessButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "BackButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "ShortRunButton",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "LayerVisible"
+              },
+              "parameters": [
+                "",
+                "\"Credit\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "ShortRunButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "EndlessButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "LongRunButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "LeaderboardButton",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StartGameButton",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "MediumRunButton",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "CreditButton",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "QuitGameButton",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "BackButton",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -1678,6 +3278,7 @@
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
       "cameraType": "",
+      "defaultCameraBehavior": "do-nothing",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
@@ -1722,10 +3323,78 @@
       "camera3DFieldOfView": 45,
       "camera3DNearPlaneDistance": 3,
       "cameraType": "",
+      "defaultCameraBehavior": "do-nothing",
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
       "name": "Credit",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "defaultCameraBehavior": "do-nothing",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "DurationSelection",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "LeaderBoardSelection",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
